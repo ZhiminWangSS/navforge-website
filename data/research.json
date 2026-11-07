@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-07",
+  "asOf": "2026-11-07 18:05 (UTC+8)",
+  "intro": "同步服务器近期实跑与资产改动，按六个能力维度保留结论、代表画面和当前边界。",
+  "scope": "这里的“通过”指指定版本的参考路线执行及相应检查，不是自主 VLN 模型成功率。SP、FPM 适配器与统一框架的检查范围不同，不合并成一个总通过率。",
+  "dimensions": [
+    {
+      "id": "SG",
+      "name": "语义定位",
+      "state": "verified",
+      "metric": "12 条 · 框架检查通过",
+      "title": "四类真实场景，12 条参考任务",
+      "conclusion": "诊所、住宅、超市、便利店采用 GRScenes。12 个独立任务的 G1 运行通过身份、物理、相机与媒体检查，检查记录均未报告障碍接触。",
+      "limit": "已排除同一任务的重复运行计数；结果是参考路线执行，不代表模型已完成语义理解。"
+    },
+    {
+      "id": "SP",
+      "name": "空间认知",
+      "state": "verified",
+      "metric": "9 条 · 任务检查通过",
+      "title": "医疗、酒店、娱乐跨层实跑完成",
+      "conclusion": "三类建筑各 3 条任务，覆盖找房间、跨层往返与到点等待。使用真实台阶碰撞和 FPM 关节控制，完整视频已完成解码与哈希核对。",
+      "limit": "医疗/酒店采用派生楼梯结构，娱乐场景有通道家具调整；未做完整连续的非足部接触审计，也未验证“有没有人”的感知能力。"
+    },
+    {
+      "id": "LH",
+      "name": "长时程",
+      "state": "verified",
+      "metric": "9 条 · 框架检查通过",
+      "title": "办公室、仓库、工厂各完成三条",
+      "conclusion": "办公室 v6、仓库 v5、工厂 v5 共 9 条实跑通过检查，按序到站且未报告障碍接触。仓库修订隐藏碰撞与路线；工厂补齐与可见几何对应的碰撞。",
+      "limit": "医院仍无本轮完成结果。工厂已存在新验收与抽帧复核，覆盖旧报告“等待结果”的状态；少数目标近景和初始化画面仍有瑕疵。"
+    },
+    {
+      "id": "GE",
+      "name": "泛化",
+      "state": "partial",
+      "metric": "新增 2 / 8 · 部分检查通过",
+      "title": "四场景扩展到 12 条，继续修复",
+      "conclusion": "保留新 GE01–04，新增 GE05–12。GE05（扶手椅）、GE07（衣帽架）通过物理与媒体检查；其余六条仍有停滞、接触或失稳问题。原 GE04 的接触问题仍保留。",
+      "limit": "FPM 尚缺框架身份、场景预检、相机几何三项正式检查；通过数不等于最终人工验收，终点仍需确认清楚入镜。"
+    },
+    {
+      "id": "MP",
+      "name": "运动精度",
+      "state": "assets",
+      "metric": "资产 · 3 训练 + 1 测试",
+      "title": "低起伏海岸替换重复街景",
+      "conclusion": "训练改为 GRScenes 餐厅、Yonder 海岸障碍场 v2、林缘障碍场；测试保留 Emerald。海岸地形高差缩为 0.45，新增 20 个障碍；林缘草叶透明材质已修复。",
+      "limit": "这是资产与相机漫游结果。新海岸需重做 MP07，餐厅需补动态行人；旧 Bistro 任务不再计入这轮 MP 训练场景。"
+    },
+    {
+      "id": "SE",
+      "name": "速度与效率",
+      "state": "assets",
+      "metric": "资产 · 2 操场 + 2 越野",
+      "title": "按 G1 条件重新整理速度场景",
+      "conclusion": "训练为 Alabama A&M 操场、coastal seed02 与 desert seed01，测试为 Milton 体育场。两类越野高差分别缩为 0.35 和 0.20；Alabama 修正面朝向后已重渲。",
+      "limit": "平地速度和直线坡地测试不能代替整条任务评测。SE05/06 仍需按新地形重做，Alabama 南弯原生网格瑕疵仍在。"
+    }
+  ],
+  "showcase": [
+    {
+      "label": "SP · HOTEL / 2026-11-07",
+      "title": "从一楼到四楼，找到指定客房",
+      "video": "assets/recent/sp-hotel.mp4",
+      "poster": "assets/recent/sp-hotel.jpg",
+      "duration": "03:29",
+      "caption": "真实台阶、FPM 关节控制，终点误差约 0.286 m，并在客房等待 8 秒。保留完整前视原片。",
+      "scope": "参考路线实跑；通过到达、楼层、观察和直立检查，不代表完整无碰撞审计。"
+    },
+    {
+      "label": "LH · FACTORY V5 / 2026-11-07",
+      "title": "巡检台 → 配电箱 → 安全门",
+      "video": "assets/recent/lh-factory.mp4",
+      "poster": "assets/recent/lh-factory.jpg",
+      "duration": "03:51",
+      "caption": "三站顺序到达，物理与媒体检查通过，未报告障碍接触。中央视角展示版，保留完整时长与原速。",
+      "scope": "LH_F2 / 拟编号 LH08；G1 沿参考路线执行，不能理解为模型自主完成巡检。"
+    },
+    {
+      "label": "GE · BISTRO / 2026-11-07",
+      "title": "从街道进入餐馆，走向衣帽架",
+      "video": "assets/recent/ge-bistro.mp4",
+      "poster": "assets/recent/ge-bistro.jpg",
+      "duration": "01:25",
+      "caption": "新增 GE07_v3，完成室外到室内的过渡。物理和媒体检查通过，中央视角保留完整过程。",
+      "scope": "FPM 适配器结果；三项框架检查与最终目标画面验收仍待补齐。"
+    }
+  ],
+  "assetPreviews": [
+    {
+      "title": "MP · 海岸障碍场 v2",
+      "image": "assets/recent/mp-coastal.jpg",
+      "caption": "低起伏地形与新增障碍的场景采样图；用于资产展示，不是机器人实跑成绩。"
+    },
+    {
+      "title": "SE · coastal seed02",
+      "image": "assets/recent/se-coastal.jpg",
+      "caption": "地形高差缩放为 0.35 的越野派生场景；与 MP 使用的海岸版本不同。"
+    }
+  ]
+}

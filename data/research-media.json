@@ -1,0 +1,35 @@
+[
+  {
+    "file": "assets/recent/sp-hotel.mp4",
+    "source": "/home/ubuntu/Navforge Forge/handoff_work/g2/sp_ramp_v1/hotel_compact_v1/right/task.mp4",
+    "sourceSha256": "7c26a259ff75b15bd06f6876d238f57b2becd054600fd4b7d14ce0893cfd668f",
+    "sha256": "7c26a259ff75b15bd06f6876d238f57b2becd054600fd4b7d14ce0893cfd668f",
+    "frames": 4187,
+    "durationSeconds": 209.35,
+    "bytes": 16244524,
+    "fullDecode": true,
+    "edit": "unchanged front video"
+  },
+  {
+    "file": "assets/recent/lh-factory.mp4",
+    "source": "/home/ubuntu/Navforge Forge/handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_factory_v5_F2/LH_F2__unitree_g1/20261107T050050_69aa342c3a/episode/three_views.mp4",
+    "sourceSha256": "578161a363123f601909670f603991f5a6f2fdb6f8d16216c0480bbbb70e5492",
+    "sha256": "39d11ac1630b0ee740cd7629c0e82b884f3242538d627767c8c01127b2def3b1",
+    "frames": 2314,
+    "durationSeconds": 231.4,
+    "bytes": 27540858,
+    "fullDecode": true,
+    "edit": "center view crop, full duration, unchanged frame rate"
+  },
+  {
+    "file": "assets/recent/ge-bistro.mp4",
+    "source": "/home/ubuntu/Navforge Forge/handoff_work/g2/ge_expansion_2026-11-07_v1/GE07_v3/runs/20261107_052511_ge/three_views.mp4",
+    "sourceSha256": "4a7138a74a7d215154881697226fb52dc11488bb66db1afc73befb9a69cf18cf",
+    "sha256": "0eab9de063f249dd94e0f94fba7aa25879d5a5dcd8264aaba86d492fd334bb19",
+    "frames": 855,
+    "durationSeconds": 85.5,
+    "bytes": 7720184,
+    "fullDecode": true,
+    "edit": "center view crop, full duration, unchanged frame rate"
+  }
+]

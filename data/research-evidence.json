@@ -1,0 +1,680 @@
+{
+  "checkedAt": "2026-11-07 18:05 (UTC+8)",
+  "records": [
+    {
+      "group": "lh_factory_v5_F1",
+      "task": "LH_F1__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_factory_v5_F1/LH_F1__unitree_g1/20261107T050608_caab98a1f7/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "c2d6625fcfe5b5136a978b414899ff88eed45c07e7bbf84b7a053b121efa01e2"
+    },
+    {
+      "group": "lh_factory_v5_F2",
+      "task": "LH_F2__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_factory_v5_F2/LH_F2__unitree_g1/20261107T050050_69aa342c3a/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "3dc1f3453e126c6fc1a36b0cb2d6c962fb1a50251909a13d04e2483c805c95b2"
+    },
+    {
+      "group": "lh_factory_v5_F3",
+      "task": "LH_F3__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_factory_v5_F3/LH_F3__unitree_g1/20261107T050628_84761bcfb3/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "80b6ec3193334644c5d4191e874e9b075ba5dcd4b18307e0255369d33a25f49f"
+    },
+    {
+      "group": "lh_office_v6_O1",
+      "task": "LH_O1__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_office_v6_O1/LH_O1__unitree_g1/20261106T164326_849fcdef06/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "7ab19e5e10b0e9e6c917544c022c5401edae5df7183a275f11512eb59edd7785"
+    },
+    {
+      "group": "lh_office_v6_O2",
+      "task": "LH_O2__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_office_v6_O2/LH_O2__unitree_g1/20261106T164441_fd1dd623ef/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "b0fe73e1d2a55734513fb1337dd0f95fc18e031373f78dab497476bb96ecb947"
+    },
+    {
+      "group": "lh_office_v6_O3",
+      "task": "LH_O3__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_office_v6_O3/LH_O3__unitree_g1/20261106T164556_1d3fe6cd5e/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "f5bd02067a3b75c845a4d0327c92ea385db535df7fcc7a7f52d960da0c5389a8"
+    },
+    {
+      "group": "lh_wh_v5_W1",
+      "task": "LH_W1__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_wh_v5_W1/LH_W1__unitree_g1/20261107T022431_fcc80acc58/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "1e773d741ecca7ee5856a297a3ecae13cf6f164c54e67a099f30f3cc984f80e8"
+    },
+    {
+      "group": "lh_wh_v5_W2",
+      "task": "LH_W2__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_wh_v5_W2/LH_W2__unitree_g1/20261107T022501_01dc067c33/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "6b3c6c68dbc38fb5785e7c912a533a3ea96bbc735c5b172c59d8910ca39e88dc"
+    },
+    {
+      "group": "lh_wh_v5_W3",
+      "task": "LH_W3__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/lh_wh_v5_W3/LH_W3__unitree_g1/20261107T022739_ba3de1c452/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "4ba0a3a7d2d5e3ba88687a56d7a2fe08b9838c3e3cb4fa95409dff9b14262d05"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD01_T01__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD01_T01__unitree_g1/20261105T042500_07d0c8258c/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "0fa37f127443eb505538ef80a9413e6a57405ae2b1f141e23d4a24de3d06e88c"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD01_T02__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD01_T02__unitree_g1/20261105T042934_13162d5bdf/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "d39ab666f47c62729bcfe9f00e50c313cb88ac82fdb28b30c1c8973b6f20b6a6"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD01_T03__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD01_T03__unitree_g1/20261105T043401_cc5e7a6dda/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "279a9f8bf513917fae6d10fdb327bbe998cfe028269a1f15dd443775afd73e57"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD02_T01__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD02_T01__unitree_g1/20261105T043807_f7096693a2/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "df7ea0c68e1ae63d8b74e720d8deaae32964fd64d213bffde96020986b75b41a"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD02_T02__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD02_T02__unitree_g1/20261105T044026_3dbb8f543d/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "f583aaae1ce7a1eca5bfda56aa0da80468c312525bab7b17d7421d4d7562b770"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD02_T03__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD02_T03__unitree_g1/20261105T044307_4c20cbf901/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "a1f187bc1a97fce6755de048d829a8645e4fe56e3f39b7160c0b6ce31a99eacd"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD03_T01__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD03_T01__unitree_g1/20261105T054127_a9b17e7caa/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "576b515f3eab7221cc18151dbec2e16b7866e485eabfe01fe5249e738efd1cc1"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD03_T02__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD03_T02__unitree_g1/20261105T054541_e8c0966081/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "f9b053fef5fcec93c7ba77eb2e62033bc2ad8b74d0cc936351e24ae3f47228f0"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD03_T03__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD03_T03__unitree_g1/20261105T055124_eb731a1e94/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "022daafb6f75f5ca201696f2771aa44f6133a8e41a4e2b8e1113eaa1309569b3"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD05_T01__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD05_T01__unitree_g1/20261105T055629_1abf9c44cb/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "initial_occlusion_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "c7f69d8754498da88f3dceaad2c95ad780f7405104640f6014f024e3ad90fb68"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD05_T02__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD05_T02__unitree_g1/20261105T060203_480bb83f7c/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "initial_occlusion_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "f7ef2f832039600919b1378d32daa6844337674479c779861b61c7829e7bafdc"
+    },
+    {
+      "group": "sg12_g1",
+      "task": "SGD05_T03__unitree_g1",
+      "source": "handoff_work/framework_validation_20261105/embodiment_framework/runs/sg12_g1/SGD05_T03__unitree_g1/20261105T060853_8f82443dcc/verification.json",
+      "passed": true,
+      "scope": "Reference-route physical execution, not autonomous VLN success",
+      "checks": {
+        "identity": true,
+        "physical_reference_v1": true,
+        "initial_occlusion_v1": true,
+        "media": true,
+        "scene_preflight": true,
+        "camera_geometry": true,
+        "profile_identity": true
+      },
+      "obstacleContacts": {},
+      "resultSha256": "2ec575614d44606efdb3d07c7048ca1ff647aeee3f3c8b310cf66b1c18f4ae59"
+    },
+    {
+      "group": "healthcare_compact_v1",
+      "task": "table",
+      "source": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/table/runs/20261107_040222_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 201.6,
+      "videoSha256": "1ac4fc730bdff3900ec78d3c4f6248a933047971f998da5122be6213e2998cd8",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "healthcare_compact_v1",
+      "task": "blue",
+      "source": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/blue/runs/20261107_040930_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 222.20000000000002,
+      "videoSha256": "cc6e92f2749ced74bcf2a73a7c9b877b69df235fc64154c33e188dad5e577cca",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "healthcare_compact_v1",
+      "task": "red",
+      "source": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/healthcare_compact_v1/red/runs/20261107_042303_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 143.9,
+      "videoSha256": "e8e60143e1a81a5902113daf25bd85d4ab852e0d398a59203b01b4d4681458b1",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "hotel_compact_v1",
+      "task": "nearest",
+      "source": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/nearest/runs/20261107_052500_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 154.5,
+      "videoSha256": "f5c00df803f7e6149fbdef4d45a4f77809e30cc06dd9531f649959f4028e4759",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "hotel_compact_v1",
+      "task": "sofa",
+      "source": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/sofa/runs/20261107_054044_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 282.2,
+      "videoSha256": "e955da1e44b5dbdb1e14016ed37b69afd77fdccea5f98e29d837a835db38b420",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "hotel_compact_v1",
+      "task": "right",
+      "source": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/hotel_compact_v1/right/runs/20261107_073930_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 209.3,
+      "videoSha256": "7c26a259ff75b15bd06f6876d238f57b2becd054600fd4b7d14ce0893cfd668f",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "entertainment_tasks_v1",
+      "task": "arcade",
+      "source": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/arcade/runs/20261107_083517_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 250.0,
+      "videoSha256": "298cc7344af6af45b02deeafb91da44d92e5e5da325976f2577b305eaa870ce6",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "entertainment_tasks_v1",
+      "task": "ktv",
+      "source": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/ktv/runs/20261107_083517_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 327.7,
+      "videoSha256": "25d5b20076413c903a7e340b31f6b9bd88bd0b5f7c68f9bf6bad637723adf943",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "entertainment_tasks_v1",
+      "task": "sofa",
+      "source": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/manifest.json",
+      "run": "handoff_work/g2/sp_ramp_v1/entertainment_tasks_v1/sofa/runs/20261107_083517_mall",
+      "passed": true,
+      "scope": "G1 articulated physics under a predefined reference route, not autonomous visual-language navigation",
+      "durationSeconds": 152.6,
+      "videoSha256": "040390acd568d274268a0d2a14053b364a697e5238407e5734f23a696adf898f",
+      "limitation": "No complete continuous non-foot contact audit"
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE05_v1",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE05_v1/runs/20261107_045038_ge/verification.json",
+      "passedPhysicalAndMedia": true,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": true,
+        "all_stops": true,
+        "contact_reporting": true,
+        "no_obstacle_contacts": true,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": true,
+        "target_visibility": true,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE06_v4",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE06_v4/runs/20261107_052400_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": true,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE07_v3",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE07_v3/runs/20261107_052511_ge/verification.json",
+      "passedPhysicalAndMedia": true,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": true,
+        "all_stops": true,
+        "contact_reporting": true,
+        "no_obstacle_contacts": true,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": true,
+        "target_visibility": true,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE08_v2",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE08_v2/runs/20261107_051808_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": false,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE09_v3",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE09_v3/runs/20261107_051548_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": true,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE10_v3",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE10_v3/runs/20261107_051836_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": false,
+        "upright": false,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE11_v1",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE11_v1/runs/20261107_051815_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": false,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    },
+    {
+      "group": "ge_expansion",
+      "task": "GE12_v1",
+      "source": "handoff_work/g2/ge_expansion_2026-11-07_v1/GE12_v1/runs/20261107_053721_ge/verification.json",
+      "passedPhysicalAndMedia": false,
+      "scope": "Reference-route physical execution with FPM adapter; framework physical checks applied offline, not autonomous VLN",
+      "physicalChecks": {
+        "stop_order": false,
+        "all_stops": false,
+        "contact_reporting": true,
+        "no_obstacle_contacts": false,
+        "upright": true,
+        "gravity": true,
+        "no_teleport": true,
+        "dynamic_joint_control": true,
+        "real_scene_floor": true,
+        "no_error": false,
+        "target_visibility": false,
+        "sample_time_order": true
+      },
+      "mediaPassed": true,
+      "missingFrameworkChecks": [
+        "identity",
+        "scene_preflight",
+        "camera_geometry"
+      ]
+    }
+  ]
+}

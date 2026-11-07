@@ -10,13 +10,15 @@ GitHub 仓库：https://github.com/ZhiminWangSS/navforge-website
 
 | 内容 | 编辑位置 | 当前版本 |
 | --- | --- | --- |
+| 六维最新结论与精选实跑 | `data/research.json`、`public/assets/recent/` | 2026-11-07 服务器核对摘要 |
+| 结论依据与媒体校验 | `data/research-evidence.json`、`data/research-media.json` | 精简记录，完整实验仍在服务器 |
 | 案例视频与详情 | `public/catalog.json`、`public/assets/` | 2026-10-30 快照，26 项 |
 | 当前任务资产来源 | `data/assets.json` | 2026-11-06 核对，飞书修订 4017，36 项任务/18 组 |
-| 最近进度 | `data/updates.json` | 按日期倒序记录已经确认的进展 |
+| 历史发布记录 | `data/updates.json` | 建站时的记录，首页结论改由 `data/research.json` 维护 |
 | 服务器资产入口快照 | `data/server-state.json` | 以 `checkedAt` 为准 |
 | 服务器检查白名单 | `config/jiangxing-assets.json` | 只检查列出的入口文件 |
 
-资产表只有「任务 / 资产来源 / 是否在 bravvo 调研范围内」三列。范围按飞书场景资产的来源系列判断，不表示特定场景已经入选某轮训练/测试。
+最新结论见页面顶部及 [研究摘要](docs/research-2026-11-07.md)。原 36 项任务资产表作为 11 月 6 日快照折叠保留，只有「任务 / 资产来源 / 是否在 bravvo 调研范围内」三列。范围按飞书场景资产的来源系列判断，不表示特定场景已经入选某轮训练/测试。
 
 新版任务与旧视频存在编号复用，尤其 SG、LH 和 GE。更新视频时须同时核对任务标题、指令、资产和版本；不要仅凭编号自动覆盖。服务器入口存在也不等于模型任务成功或全部贴图依赖完整。
 
@@ -56,7 +58,7 @@ git commit -m "Refresh JiangXing asset snapshot"
 git push origin main
 ```
 
-脚本只读服务器上的白名单文件，记录入口存在性、大小和修改时间；不会上传 USD、原始模型、实验目录或凭据。进度文字需编辑 `data/updates.json`，不会从文件时间猜测实验结论。
+脚本只读服务器上的白名单文件，记录入口存在性、大小和修改时间；不会上传 USD、原始模型、实验目录或凭据。最新结论需核查运行结果后编辑 `data/research.json` 并同步证据摘要，不会从文件时间猜测实验结论。
 
 ## JiangXing 部署
 
