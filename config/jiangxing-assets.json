@@ -1,0 +1,114 @@
+{
+  "root": "/home/ubuntu/Navforge Forge",
+  "checks": [
+    {
+      "task": "SG01–SG03｜诊所",
+      "paths": [
+        "handoff_work/grscenes_demo/scene01/scene.usda"
+      ]
+    },
+    {
+      "task": "SG04–SG06｜住宅",
+      "paths": [
+        "handoff_work/grscenes_demo/scene02/scene_pbr.usda"
+      ]
+    },
+    {
+      "task": "SG07–SG09｜超市",
+      "paths": [
+        "handoff_work/grscenes_demo/scene03/scene_pbr.usda"
+      ]
+    },
+    {
+      "task": "SG10–SG12｜便利店",
+      "paths": [
+        "handoff_work/grscenes_demo/replacement_preview_01/scene_tasks.usda"
+      ]
+    },
+    {
+      "task": "SP01、SP02｜多层店铺（暂时注释）",
+      "paths": [
+        "handoff_work/g1/revisions/20261101_sp_shop_realism/assets/shops_final_v9.usda"
+      ]
+    },
+    {
+      "task": "SP03｜现成商场样片",
+      "paths": [
+        "experiments/mall_realism_20261028/derived/mall_lit.usda"
+      ]
+    },
+    {
+      "task": "GE01｜咖啡馆到街角",
+      "paths": [
+        "assets/source/gap_assets/navverse_mar01/vc_plus/PARIS/PARIS_innout.usd"
+      ]
+    },
+    {
+      "task": "GE02｜餐馆到街角菜单",
+      "paths": [
+        "handoff_work/g2/isaac_scenes_2026-10-30/bistro_v2/bistro_isaac.usda"
+      ]
+    },
+    {
+      "task": "GE03｜客厅到洗手盆",
+      "paths": [
+        "handoff_work/g2/isaac_scenes_2026-10-30/house15_v2/scene/house15_isaac.usda"
+      ]
+    },
+    {
+      "task": "GE04–GE09｜高度/FoV 对照",
+      "paths": [
+        "handoff_work/g2/ge_extensions_2026-10-29/emerald_review_v1/emerald_pbr_review.blend"
+      ]
+    },
+    {
+      "task": "LH01–LH03｜办公室",
+      "paths": [
+        "/home/ubuntu/navforge_stages/lh_review_v1/office_task_v3/office_task.usda"
+      ]
+    },
+    {
+      "task": "MP01｜轮胎与岩木通道",
+      "paths": [
+        "handoff_work/outdoor_precision_20261028/derived/outdoor_scene.usda",
+        "handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/scene_visual_v2.usda"
+      ]
+    },
+    {
+      "task": "MP05｜Bistro 街区",
+      "paths": [
+        "handoff_work/g3_v2/derived/mp05_mp06_rebuild/bistro_converted/bistro_scene.usda"
+      ]
+    },
+    {
+      "task": "MP06｜城市公园",
+      "paths": [
+        "handoff_work/g3_v2/derived/mp05_mp06_rebuild/emerald_converted/emerald_scene.usda"
+      ]
+    },
+    {
+      "task": "MP07｜海岸障碍场",
+      "paths": [
+        "/home/ubuntu/navforge_stages/g3v3/coastal_obstacles.usda"
+      ]
+    },
+    {
+      "task": "SE03、SE04｜操场整圈",
+      "paths": [
+        "handoff_work/g3_v2/derived/playfield/track.usda"
+      ]
+    },
+    {
+      "task": "SE05、SE06｜沙丘定向越野",
+      "paths": [
+        "handoff_work/g3_v2/derived/orienteering/desert_orienteering.usda"
+      ]
+    },
+    {
+      "task": "SE07｜真实体育场",
+      "paths": [
+        "/home/ubuntu/navforge_stages/se07_milton/se07_stage.usda"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "checkedAt": "2026-11-07T09:48:25.991538+00:00",
+  "server": "JiangXing",
+  "meaning": "仅确认场景入口文件存在；不代表依赖完整、任务运行成功或视频已更新。",
+  "checks": [
+    {
+      "task": "SG01–SG03｜诊所",
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "exists": true,
+          "bytes": 718491,
+          "modified": "2026-11-03T03:47:38.544219+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SG04–SG06｜住宅",
+      "entries": [
+        {
+          "entry": "scene_pbr.usda",
+          "exists": true,
+          "bytes": 4843477,
+          "modified": "2026-11-03T07:02:08.801991+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SG07–SG09｜超市",
+      "entries": [
+        {
+          "entry": "scene_pbr.usda",
+          "exists": true,
+          "bytes": 19695492,
+          "modified": "2026-11-03T07:53:42.241112+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SG10–SG12｜便利店",
+      "entries": [
+        {
+          "entry": "scene_tasks.usda",
+          "exists": true,
+          "bytes": 530,
+          "modified": "2026-11-03T12:25:56.869526+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SP01、SP02｜多层店铺（暂时注释）",
+      "entries": [
+        {
+          "entry": "shops_final_v9.usda",
+          "exists": true,
+          "bytes": 1547,
+          "modified": "2026-11-01T14:07:33.374745+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SP03｜现成商场样片",
+      "entries": [
+        {
+          "entry": "mall_lit.usda",
+          "exists": true,
+          "bytes": 157751,
+          "modified": "2026-10-28T11:01:34.407641+00:00"
+        }
+      ]
+    },
+    {
+      "task": "GE01｜咖啡馆到街角",
+      "entries": [
+        {
+          "entry": "PARIS_innout.usd",
+          "exists": true,
+          "bytes": 116848332,
+          "modified": "2026-10-12T15:29:09.636013+00:00"
+        }
+      ]
+    },
+    {
+      "task": "GE02｜餐馆到街角菜单",
+      "entries": [
+        {
+          "entry": "bistro_isaac.usda",
+          "exists": true,
+          "bytes": 1762371,
+          "modified": "2026-10-30T18:46:43.692327+00:00"
+        }
+      ]
+    },
+    {
+      "task": "GE03｜客厅到洗手盆",
+      "entries": [
+        {
+          "entry": "house15_isaac.usda",
+          "exists": true,
+          "bytes": 142872,
+          "modified": "2026-10-30T18:49:08.227249+00:00"
+        }
+      ]
+    },
+    {
+      "task": "GE04–GE09｜高度/FoV 对照",
+      "entries": [
+        {
+          "entry": "emerald_pbr_review.blend",
+          "exists": true,
+          "bytes": 350637360,
+          "modified": "2026-10-29T15:19:50.346575+00:00"
+        }
+      ]
+    },
+    {
+      "task": "LH01–LH03｜办公室",
+      "entries": [
+        {
+          "entry": "office_task.usda",
+          "exists": true,
+          "bytes": 52991,
+          "modified": "2026-11-06T02:21:48.164620+00:00"
+        }
+      ]
+    },
+    {
+      "task": "MP01｜轮胎与岩木通道",
+      "entries": [
+        {
+          "entry": "outdoor_scene.usda",
+          "exists": true,
+          "bytes": 2287550,
+          "modified": "2026-10-28T10:38:50.970037+00:00"
+        },
+        {
+          "entry": "scene_visual_v2.usda",
+          "exists": true,
+          "bytes": 227451,
+          "modified": "2026-11-06T05:48:54.684098+00:00"
+        }
+      ]
+    },
+    {
+      "task": "MP05｜Bistro 街区",
+      "entries": [
+        {
+          "entry": "bistro_scene.usda",
+          "exists": true,
+          "bytes": 636734,
+          "modified": "2026-10-30T04:45:55.099920+00:00"
+        }
+      ]
+    },
+    {
+      "task": "MP06｜城市公园",
+      "entries": [
+        {
+          "entry": "emerald_scene.usda",
+          "exists": true,
+          "bytes": 24614,
+          "modified": "2026-10-30T04:45:55.711935+00:00"
+        }
+      ]
+    },
+    {
+      "task": "MP07｜海岸障碍场",
+      "entries": [
+        {
+          "entry": "coastal_obstacles.usda",
+          "exists": true,
+          "bytes": 2584439,
+          "modified": "2026-11-05T09:53:00.997451+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SE03、SE04｜操场整圈",
+      "entries": [
+        {
+          "entry": "track.usda",
+          "exists": true,
+          "bytes": 189980,
+          "modified": "2026-10-28T11:41:59.427487+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SE05、SE06｜沙丘定向越野",
+      "entries": [
+        {
+          "entry": "desert_orienteering.usda",
+          "exists": true,
+          "bytes": 2640385,
+          "modified": "2026-10-29T13:35:21.371155+00:00"
+        }
+      ]
+    },
+    {
+      "task": "SE07｜真实体育场",
+      "entries": [
+        {
+          "entry": "se07_stage.usda",
+          "exists": true,
+          "bytes": 1689608,
+          "modified": "2026-11-05T18:29:15.119730+00:00"
+        }
+      ]
+    }
+  ]
+}
