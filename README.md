@@ -8,10 +8,12 @@ GitHub 发布仓库：https://github.com/ZhiminWangSS/navforge-website
 
 ## 当前页面（2026-11-09）
 
-首页按飞书修订 5063 的六维 **3 个训练 + 1 个测试** 配置展示 24 个场景，包含 24 段完整原速相机漫游、服务器入口与媒体哈希、物理验证范围及飞书来源。每维可筛选。
+首页以飞书修订 **5077 的任务设计**为主，按六个能力切换任务指令、环境线索与评价指标。原文61条设计中的历史补充与扩展/备选单独折叠。首页不加载场景视频或24张场景卡片；3+1配置只保留折叠概览，完整漫游及服务器依据移至 `scenes.html`。
 
-- `data/scenes.json`：当前24场景与模型记录快照；后续更新以此为主。
-- `public/index.html`、`public/scenes.js`、`public/scenes.css`：新版首页。
+- `data/task-design.json`、`scripts/render_tasks.py`：任务正文、原文锚点、场景对应与渲染校验。
+- `public/index.html`、`public/tasks.js`、`public/tasks.css`：任务首页和六维切换。
+- `data/scenes.json`：当前24场景与模型记录快照。
+- `public/scenes.html`、`public/scenes.js`、`public/scenes.css`：独立场景详情页。
 - `scripts/render_scenes.py`：构建时检查划分、媒体哈希、路径和结果身份。
 - `public/archive.html`：旧任务、26个案例和历史参考实跑的完整归档入口。
 - `public/evaluation/index.html`：9项旧版探索复测，成绩及数据集保持不变。

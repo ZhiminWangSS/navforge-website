@@ -10,6 +10,7 @@ import shutil
 import subprocess
 from render_research import render as render_research
 from render_scenes import render as render_scenes
+from render_tasks import render as render_tasks
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -67,10 +68,16 @@ def build(destination):
     assert (ROOT / 'public/access.js').is_file()
     current = (ROOT / 'public/index.html').read_text()
     scenes = render_scenes(ROOT)
+    scene_page = (ROOT / 'public/scenes.html').read_text()
     for marker, key in [('OVERVIEW', 'overview'), ('CARDS', 'scenes'), ('MODELS', 'models'), ('REVISION', 'revision'), ('CHECKED', 'checked')]:
         token = f'<!-- SCENE_{marker} -->'
-        assert current.count(token) == 1, token
-        current = current.replace(token, scenes[key])
+        assert scene_page.count(token) == 1, token
+        scene_page = scene_page.replace(token, scenes[key])
+    assert current.count('<!-- SCENE_OVERVIEW -->') == 1
+    current = current.replace('<!-- SCENE_OVERVIEW -->', scenes['overview'].replace('href="#group-', 'href="scenes.html#group-'))
+    assert current.count('<!-- TASK_DESIGN -->') == current.count('<!-- TASK_REVISION -->') == 1
+    current = current.replace('<!-- TASK_DESIGN -->', render_tasks(ROOT)).replace('<!-- TASK_REVISION -->', str(read('data/task-design.json')['sourceRevision']))
+    assert '<video' not in current and 'class="scene-card"' not in current, 'Keep the landing page focused on task design'
     for ref in re.findall(r'(?:src|href)="([^"#]+)"', current):
         if not ref.startswith(('https:', 'http:')):
             assert (ROOT / 'public' / ref.split('#')[0]).is_file(), ref
@@ -119,12 +126,14 @@ def build(destination):
     shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True, symlinks=True, ignore=ignore_live_runs)
     (destination / 'archive.html').write_text(html.replace('<!-- PROJECT_STATUS -->', status).replace('<!-- RESEARCH_DIGEST -->', research_html))
     (destination / 'index.html').write_text(current)
+    (destination / 'scenes.html').write_text(scene_page)
     (destination / 'data.js').write_text('window.NAVFORGE = ' + json.dumps(catalog, ensure_ascii=False) + ';\n')
     shutil.copytree(ROOT / 'data', destination / 'data', dirs_exist_ok=True)
     (destination / '.nojekyll').touch()
     revision = subprocess.run(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'], capture_output=True, text=True)
     register = read('data/scenes.json')
-    (destination / 'version.json').write_text(json.dumps({'commit': revision.stdout.strip() or 'local-preview', 'catalogUpdated': catalog['updated'], 'sceneCount': len(register['scenes']), 'sourceRevision': register['sourceRevision'], 'scenesReviewed': register['checkedAt'], 'assetsReviewed': assets['reviewed'], 'researchReviewed': read('data/research.json')['asOf']}) + '\n')
+    design = read('data/task-design.json')
+    (destination / 'version.json').write_text(json.dumps({'commit': revision.stdout.strip() or 'local-preview', 'catalogUpdated': catalog['updated'], 'sceneCount': len(register['scenes']), 'sourceRevision': register['sourceRevision'], 'taskDesignRevision': design['sourceRevision'], 'taskDesignCount': len(design['tasks']), 'scenesReviewed': register['checkedAt'], 'assetsReviewed': assets['reviewed'], 'researchReviewed': read('data/research.json')['asOf']}) + '\n')
     print(f'Built {len(register["scenes"])} current scenes, 6 native model records, {len(catalog["cases"])} archived videos. Output: {destination}')
 
 
