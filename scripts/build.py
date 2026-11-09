@@ -99,7 +99,11 @@ def build(destination):
                 assert path.is_file(), ref
                 allowed.add(ref)
     native_root = ROOT / 'public/evaluation/native-20261109'
-    assert {p.relative_to(native_root).as_posix() for p in native_root.rglob('*') if p.is_file()} == allowed, 'Unexpected raw artifacts in native display snapshot'
+    observed = {p.relative_to(native_root).as_posix() for p in native_root.rglob('*') if p.is_file()}
+    # Path.rglob does not recurse through the workspace's ignored media link.
+    media_root = (native_root / 'media').resolve()
+    observed.update('media/' + p.relative_to(media_root).as_posix() for p in media_root.rglob('*') if p.is_file())
+    assert observed == allowed, 'Unexpected raw artifacts in native display snapshot'
     destination.mkdir(parents=True, exist_ok=True)
     # The workspace's live native page links entire mutable run directories.
     # Publish the dated, allow-listed snapshot, never follow those live links.
