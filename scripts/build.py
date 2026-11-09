@@ -105,7 +105,14 @@ def build(destination):
     # Publish the dated, allow-listed snapshot, never follow those live links.
     def ignore_live_runs(directory, names):
         return {'native'} if Path(directory) == ROOT / 'public/evaluation' else set()
-    shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True, ignore=ignore_live_runs)
+    # Preserve the workspace's external-media links; the deployment repository
+    # contains regular media files and consequently builds a standalone site.
+    for source in (ROOT / 'public').rglob('*'):
+        if source.is_symlink() and 'native' not in source.relative_to(ROOT / 'public').parts:
+            target = destination / source.relative_to(ROOT / 'public')
+            if target.is_symlink():
+                target.unlink()
+    shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True, symlinks=True, ignore=ignore_live_runs)
     (destination / 'archive.html').write_text(html.replace('<!-- PROJECT_STATUS -->', status).replace('<!-- RESEARCH_DIGEST -->', research_html))
     (destination / 'index.html').write_text(current)
     (destination / 'data.js').write_text('window.NAVFORGE = ' + json.dumps(catalog, ensure_ascii=False) + ';\n')
