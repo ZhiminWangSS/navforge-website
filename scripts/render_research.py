@@ -20,7 +20,7 @@ def render(root: Path):
     for item in data['showcase']:
         for key in ['video', 'poster']:
             path = (root / 'public' / item[key]).resolve()
-            assert path.is_relative_to((root / 'public').resolve()) and path.is_file(), item[key]
+            assert path.is_relative_to((root / 'public/assets').resolve()) and path.is_file(), item[key]
         record = media[item['video']]
         assert record['fullDecode'] and record['frames'] > 0
         assert hashlib.sha256((root / 'public' / item['video']).read_bytes()).hexdigest() == record['sha256']

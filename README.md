@@ -1,10 +1,37 @@
 # NavForge website
 
-公开展示站：https://zhiminwangss.github.io/navforge-website/
+公开站点：https://zhiminwangss.github.io/navforge-website/
 
-GitHub 仓库：https://github.com/ZhiminWangSS/navforge-website
+GitHub 发布仓库：https://github.com/ZhiminWangSS/navforge-website
 
-从原 NavForge 网站迁出为独立静态站点，保留 26 个完整视频、封面、场景/轨迹图及交互。无需 Node、数据库或登录服务。GitHub Pages 与 JiangXing 使用相同构建脚本。原 Sites 站点和源码不受影响。
+统一开发源码：`/home/ubuntu/navforge-workspace/web/site`。`/home/ubuntu/navforge-website` 继续是部署镜像，原资产、模拟器和实验数据保持外置。
+
+## 当前页面（2026-11-09）
+
+首页按飞书修订 5063 的六维 **3 个训练 + 1 个测试** 配置展示 24 个场景，包含 24 段完整原速相机漫游、服务器入口与媒体哈希、物理验证范围及飞书来源。每维可筛选。
+
+- `data/scenes.json`：当前24场景与模型记录快照；后续更新以此为主。
+- `public/index.html`、`public/scenes.js`、`public/scenes.css`：新版首页。
+- `scripts/render_scenes.py`：构建时检查划分、媒体哈希、路径和结果身份。
+- `public/archive.html`：旧任务、26个案例和历史参考实跑的完整归档入口。
+- `public/evaluation/index.html`：9项旧版探索复测，成绩及数据集保持不变。
+- `public/evaluation/native-20261109/`：MP/SE 原生协议的独立发布快照、双视角和逐步像素动作。
+
+详细版本对应和证据见 [场景核对记录](docs/scene-register-2026-11-09.md)。旧 `research.json`、`assets.json`、`server-state.json` 现在供历史归档使用；原数据另存 `data/archive/`。
+
+构建、推送至 `main` 后按既有 GitHub Actions 发布 Pages；JiangXing 定时拉取同一仓库并原子切换版本。
+
+```sh
+python3 scripts/test_serve.py
+python3 scripts/build.py
+python3 scripts/serve.py --directory "$PWD/_site" --port 8099
+```
+
+保留原有前端访问密码入口。展示媒体跟随网站发布仓库；整个 workspace 的 Git 仍排除大资产、录像与存储链接，不向其自动添加发布远端。
+
+## 既有部署与归档说明
+
+以下说明保留既有部署操作；其中11月6日至7日的任务表、样例统计和研究结论属于历史归档。
 
 ## 数据与版本
 

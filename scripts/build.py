@@ -9,6 +9,7 @@ import re
 import shutil
 import subprocess
 from render_research import render as render_research
+from render_scenes import render as render_scenes
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,7 +28,7 @@ def build(destination):
         seen.add(case['id'])
         for value in [case['video'], case['poster']] + [im['src'] for im in case['images']]:
             path = ROOT / 'public' / value
-            assert path.resolve().is_relative_to((ROOT / 'public').resolve()) and path.is_file(), value
+            assert path.resolve().is_relative_to((ROOT / 'public/assets').resolve()) and path.is_file(), value
     assert len(assets['rows']) == len(state['checks'])
     assert {r['task'] for r in assets['rows']} == {r['task'] for r in state['checks']}
     assert all(set(r) == {'task', 'source', 'in_bravvo_scope'} for r in assets['rows'])
@@ -51,7 +52,9 @@ def build(destination):
 <details class="asset-details"><summary>展开 {escape(assets['reviewed'])} 任务来源表 <span>{assets['taskCount']} TASKS ↗</span></summary><p class="scope-note">此表保留当日对应关系，后续新增和重号任务不自动套用。{escape(assets['scope'])}</p><div class="asset-scroll" tabindex="0" role="region" aria-label="任务资产来源表"><table><thead><tr><th scope="col">任务</th><th scope="col">资产来源</th><th scope="col">是否在 bravvo 调研范围内</th></tr></thead><tbody>{rows}</tbody></table></div></details>
 <a class="text-link" href="https://github.com/ZhiminWangSS/navforge-website" target="_blank" rel="noopener">GitHub 仓库与更新记录 ↗</a>
 </section>'''
-    html = (ROOT / 'public/index.html').read_text()
+    # Retain the old page, task numbering, source table and research digest as
+    # an explicitly dated archive. The current landing page uses the 3+1 register.
+    html = (ROOT / 'public/archive.html').read_text()
     assert html.count('<!-- PROJECT_STATUS -->') == 1
     assert html.count('<!-- RESEARCH_DIGEST -->') == 1
     research_html = render_research(ROOT)
@@ -62,6 +65,15 @@ def build(destination):
             assert (ROOT / 'public' / ref).is_file(), ref
     assert 'access.js' in html and 'navforge-locked' in html
     assert (ROOT / 'public/access.js').is_file()
+    current = (ROOT / 'public/index.html').read_text()
+    scenes = render_scenes(ROOT)
+    for marker, key in [('OVERVIEW', 'overview'), ('CARDS', 'scenes'), ('MODELS', 'models'), ('REVISION', 'revision'), ('CHECKED', 'checked')]:
+        token = f'<!-- SCENE_{marker} -->'
+        assert current.count(token) == 1, token
+        current = current.replace(token, scenes[key])
+    for ref in re.findall(r'(?:src|href)="([^"#]+)"', current):
+        if not ref.startswith(('https:', 'http:')):
+            assert (ROOT / 'public' / ref.split('#')[0]).is_file(), ref
     # Evaluation is self-contained on both Pages and the server.
     evaluation = (ROOT / 'public/evaluation/index.html').read_text()
     assert '../access.js' in evaluation and 'navforge-locked' in evaluation
@@ -72,15 +84,37 @@ def build(destination):
                 media = ROOT / 'public/evaluation' / ref
                 assert media.resolve().is_relative_to((ROOT / 'public/evaluation/media').resolve()), ref
                 assert media.is_file() and 0 < media.stat().st_size < 100_000_000, ref
+    native_page = (ROOT / 'public/evaluation/native-20261109/index.html').read_text()
+    native = json.loads(re.search(r'<script id="native-data" type="application/json">(.*?)</script>', native_page, re.S)[1])
+    snapshot = {r['task_id']: r for r in read('data/scenes.json')['modelRuns']}
+    assert len(native) == len(snapshot) == 6
+    allowed = {'index.html', 'summary.json'}
+    for run in native:
+        summary = snapshot[run['task_id']]
+        assert all(run[k] == summary[k] for k in ['status', 'SR', 'source_config_sha256', 'output'])
+        for ref in [run.get('first_person'), run.get('third_person')] + [d['image'] for d in run['decisions']]:
+            if ref:
+                path = ROOT / 'public/evaluation/native-20261109' / ref
+                assert path.resolve().is_relative_to((ROOT / 'public/evaluation/native-20261109/media').resolve()), ref
+                assert path.is_file(), ref
+                allowed.add(ref)
+    native_root = ROOT / 'public/evaluation/native-20261109'
+    assert {p.relative_to(native_root).as_posix() for p in native_root.rglob('*') if p.is_file()} == allowed, 'Unexpected raw artifacts in native display snapshot'
     destination.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True)
-    (destination / 'index.html').write_text(html.replace('<!-- PROJECT_STATUS -->', status).replace('<!-- RESEARCH_DIGEST -->', research_html))
+    # The workspace's live native page links entire mutable run directories.
+    # Publish the dated, allow-listed snapshot, never follow those live links.
+    def ignore_live_runs(directory, names):
+        return {'native'} if Path(directory) == ROOT / 'public/evaluation' else set()
+    shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True, ignore=ignore_live_runs)
+    (destination / 'archive.html').write_text(html.replace('<!-- PROJECT_STATUS -->', status).replace('<!-- RESEARCH_DIGEST -->', research_html))
+    (destination / 'index.html').write_text(current)
     (destination / 'data.js').write_text('window.NAVFORGE = ' + json.dumps(catalog, ensure_ascii=False) + ';\n')
     shutil.copytree(ROOT / 'data', destination / 'data', dirs_exist_ok=True)
     (destination / '.nojekyll').touch()
     revision = subprocess.run(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'], capture_output=True, text=True)
-    (destination / 'version.json').write_text(json.dumps({'commit': revision.stdout.strip() or 'local-preview', 'catalogUpdated': catalog['updated'], 'assetsReviewed': assets['reviewed'], 'researchReviewed': read('data/research.json')['asOf']}) + '\n')
-    print(f'Built {len(catalog["cases"])} videos, {assets["taskCount"]} tasks; {present}/{len(entries)} server entries. Output: {destination}')
+    register = read('data/scenes.json')
+    (destination / 'version.json').write_text(json.dumps({'commit': revision.stdout.strip() or 'local-preview', 'catalogUpdated': catalog['updated'], 'sceneCount': len(register['scenes']), 'sourceRevision': register['sourceRevision'], 'scenesReviewed': register['checkedAt'], 'assetsReviewed': assets['reviewed'], 'researchReviewed': read('data/research.json')['asOf']}) + '\n')
+    print(f'Built {len(register["scenes"])} current scenes, 6 native model records, {len(catalog["cases"])} archived videos. Output: {destination}')
 
 
 if __name__ == '__main__':

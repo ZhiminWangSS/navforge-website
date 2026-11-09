@@ -1,0 +1,98 @@
+{
+  "reviewed": "2026-11-06",
+  "sourceRevision": 4017,
+  "taskCount": 36,
+  "scope": "bravvo 范围以飞书「场景资产 → 可用资产列表」的来源系列为准；不代表具体场景已入选本轮训练/测试。",
+  "rows": [
+    {
+      "task": "SG01–SG03｜诊所",
+      "source": "GRScenes",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SG04–SG06｜住宅",
+      "source": "GRScenes",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SG07–SG09｜超市",
+      "source": "GRScenes",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SG10–SG12｜便利店",
+      "source": "GRScenes",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SP01、SP02｜多层店铺（暂时注释）",
+      "source": "HouseLayout3D WYY＋HSSD＋Poly Haven 道具",
+      "in_bravvo_scope": "部分：主场景不在，仅 Poly Haven 道具在范围内"
+    },
+    {
+      "task": "SP03｜现成商场样片",
+      "source": "BlenderKit · Mall interior",
+      "in_bravvo_scope": "否"
+    },
+    {
+      "task": "GE01｜咖啡馆到街角",
+      "source": "NavVerse · Paris",
+      "in_bravvo_scope": "否"
+    },
+    {
+      "task": "GE02｜餐馆到街角菜单",
+      "source": "NVIDIA ORCA · Bistro",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "GE03｜客厅到洗手盆",
+      "source": "Superhive · House15",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "GE04–GE09｜高度/FoV 对照",
+      "source": "NVIDIA ORCA · Emerald Square",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "LH01–LH03｜办公室",
+      "source": "NVIDIA Isaac · Office",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "MP01｜轮胎与岩木通道",
+      "source": "Poly Haven 道具组合",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "MP05｜Bistro 街区",
+      "source": "NVIDIA ORCA · Bistro",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "MP06｜城市公园",
+      "source": "NVIDIA ORCA · Emerald Square",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "MP07｜海岸障碍场",
+      "source": "Yonder coastal seed01＋Poly Haven 道具",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SE03、SE04｜操场整圈",
+      "source": "项目自建程序化操场",
+      "in_bravvo_scope": "否"
+    },
+    {
+      "task": "SE05、SE06｜沙丘定向越野",
+      "source": "Yonder desert seed01",
+      "in_bravvo_scope": "是"
+    },
+    {
+      "task": "SE07｜真实体育场",
+      "source": "Sketchfab · Milton Frank Stadium",
+      "in_bravvo_scope": "是"
+    }
+  ]
+}

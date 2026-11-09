@@ -1,0 +1,38 @@
+[
+  {
+    "file": "evaluation/native-20261109/media/SE05/third_person.mp4",
+    "sha256": "6c9943bfc259f18937d55f98a5ae3e5a780f1de5fd42c0997df2d3aa83e8f1a4",
+    "fullDecode": true,
+    "bytes": 723694
+  },
+  {
+    "file": "evaluation/native-20261109/media/SE05/first_person.mp4",
+    "sha256": "3fcc91b137b8feeb2ff62f38bfcb3188b793de8955890406ddc4822e749d0e3e",
+    "fullDecode": true,
+    "bytes": 1169957
+  },
+  {
+    "file": "evaluation/native-20261109/media/MP02/third_person.mp4",
+    "sha256": "803fa92862ca104b64fe87388279212b843667c531a601638541c89255fa7adc",
+    "fullDecode": true,
+    "bytes": 3664874
+  },
+  {
+    "file": "evaluation/native-20261109/media/MP02/first_person.mp4",
+    "sha256": "16dfb4b1369cb16cd64f69bd317a86cc2604fe5bdd31b25eb8d809eac50b96cb",
+    "fullDecode": true,
+    "bytes": 3835648
+  },
+  {
+    "file": "evaluation/native-20261109/media/MP03/third_person.mp4",
+    "sha256": "df3d8b4a3825ac574195287de8676b89bb335ccdb63bac2dcb3ad5e95f87e38e",
+    "fullDecode": true,
+    "bytes": 1833940
+  },
+  {
+    "file": "evaluation/native-20261109/media/MP03/first_person.mp4",
+    "sha256": "a960c81af05480890f39f0142552b39fc90ac8f5c0a8406f655c83ea891a3f07",
+    "fullDecode": true,
+    "bytes": 3082795
+  }
+]

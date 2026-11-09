@@ -1,0 +1,1857 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-09（UTC+8）",
+  "sourceUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg",
+  "sourceRevision": 5063,
+  "sourceSection": "选定资产总览与六维场景资产表",
+  "workspace": "/home/ubuntu/navforge-workspace",
+  "dimensionNotes": {
+    "SG": "住宅、便利店、诊所训练；超市测试。用场景 ID 区分旧任务重号。",
+    "SP": "超市、医疗、酒店训练；娱乐测试。楼梯与碰撞采用注明版本，漫游和 G1 执行范围分别记录。",
+    "GE": "House15、Bistro、Brownstone 训练；4004 Moore Lane 测试。",
+    "LH": "工厂、仓库、办公室训练；医院测试。历史 v5/v6 实跑继续留档。",
+    "MP": "餐厅、海岸障碍场、林缘障碍场训练；Emerald 城市公园测试。旧 Bistro 不计入本轮训练配置。",
+    "SE": "Alabama、海岸 seed02、沙漠 seed01 训练；海岸 seed03 测试。高原草甸及室内仓储单列为扩展/备选。"
+  },
+  "notes": [
+    "飞书场景资产表与后面的旧任务列表存在版本差异；当前场景使用资产总览的3+1划分。",
+    "SE导语另含草甸扩展测试，但选定资产表只列seed03。本页严格按24个主场景呈现，保留扩展的飞书来源。",
+    "当前USD入口存在及哈希已核对，不等于全部依赖许可或可导航性已验收。",
+    "历史参考实跑的场景派生、任务ID及模型协议不自动继承。"
+  ],
+  "modelRegistry": {
+    "source": "/home/ubuntu/navforge-workspace/web/site/public/evaluation/native/summary.json",
+    "sha256": "d6722c273d3ae914c8ebc9a6f35d04fc5fa3663c4a6421c2ba25e87af7cdc8e3",
+    "snapshot": "2026-11-09"
+  },
+  "modelRuns": [
+    {
+      "run_version": "astra_r4",
+      "protocol": null,
+      "task_id": "SE01",
+      "source_task_id": "SE03",
+      "asset_id": "se07_alabama_track",
+      "asset_key": "asset-fc91981d0df0759a",
+      "task_key": "task-5aa0231d287b0d1a",
+      "model": "gpt-6-astra",
+      "status": "waiting_for_gpu",
+      "SR": null,
+      "checkpoints_completed": null,
+      "checkpoints_total": 1,
+      "reason": null,
+      "clock": "monotonic_wall",
+      "time_budget_s": 215,
+      "elapsed_s": null,
+      "sim_time_s": null,
+      "model_calls_executed": 0,
+      "model_evidence": null,
+      "source_config_sha256": "87b4b987d0369d7f78a45378a853eb6a83217dbc0d7eaa6e35acdf7f11fb79be",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/SE01/astra_r4",
+      "first_person": null,
+      "third_person": null,
+      "sceneLabel": "Alabama 操场",
+      "currentSceneVersionVerified": false,
+      "media": {}
+    },
+    {
+      "run_version": "astra_r3",
+      "protocol": null,
+      "task_id": "SE03",
+      "source_task_id": "SE05",
+      "asset_id": "se05_desert_orienteering_v3",
+      "asset_key": "asset-fc993cdafcd4b279",
+      "task_key": "task-6553e4ad669adec2",
+      "model": "gpt-6-astra",
+      "status": "not_started",
+      "SR": null,
+      "checkpoints_completed": null,
+      "checkpoints_total": 4,
+      "reason": null,
+      "clock": "monotonic_wall",
+      "time_budget_s": 130.0,
+      "elapsed_s": null,
+      "sim_time_s": null,
+      "model_calls_executed": 0,
+      "model_evidence": null,
+      "source_config_sha256": "4739a04a669fb29707074be970556af2b801f04168e08779a63c1ca01b997d41",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/SE03/astra_r3",
+      "first_person": null,
+      "third_person": null,
+      "sceneLabel": "沙漠 seed01",
+      "currentSceneVersionVerified": false,
+      "media": {}
+    },
+    {
+      "run_version": "astra_r2",
+      "protocol": "native_pixel_fpm_v2",
+      "task_id": "SE05",
+      "source_task_id": "SE07",
+      "asset_id": "se07_coastal_orienteering_v3",
+      "asset_key": "asset-7a4354af99b18919",
+      "task_key": "task-9c571ef58937cb2d",
+      "model": "gpt-6-astra",
+      "status": "completed",
+      "SR": 0,
+      "checkpoints_completed": 0,
+      "checkpoints_total": 4,
+      "reason": "time_budget_exhausted",
+      "clock": "monotonic_wall",
+      "time_budget_s": 110.0,
+      "elapsed_s": 110.36075339297531,
+      "sim_time_s": 2.7,
+      "model_calls_executed": 3,
+      "model_evidence": {
+        "started": 4,
+        "replies": 4,
+        "actions": 4
+      },
+      "source_config_sha256": "f570bdb9a92873ceb66472a8c72c0d123dbb6a9744dd13c49a4ae459d6c146d3",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/SE05/astra_r2",
+      "first_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/SE05/astra_r2/first_person.mp4",
+      "third_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/SE05/astra_r2/third_person.mp4",
+      "video_quality": {
+        "frames": 29,
+        "first_person_bad_frames": 0,
+        "third_person_unverified_frames": 0,
+        "scope": "10 Hz physical simulation frames; model waiting time is not duplicated in video."
+      },
+      "sceneLabel": "海岸 seed02",
+      "currentSceneVersionVerified": false,
+      "media": {
+        "first": "evaluation/native-20261109/media/SE05/first_person.mp4",
+        "third": "evaluation/native-20261109/media/SE05/third_person.mp4"
+      }
+    },
+    {
+      "run_version": "astra_r3",
+      "protocol": null,
+      "task_id": "MP01",
+      "source_task_id": "MP05",
+      "asset_id": "orca_bistro",
+      "asset_key": "asset-fa0c31c514c918be",
+      "task_key": "task-826249e223128488",
+      "model": "gpt-6-astra",
+      "status": "not_started",
+      "SR": null,
+      "checkpoints_completed": null,
+      "checkpoints_total": 3,
+      "reason": null,
+      "clock": "simulation",
+      "time_budget_s": 100,
+      "elapsed_s": null,
+      "sim_time_s": null,
+      "model_calls_executed": 0,
+      "model_evidence": null,
+      "source_config_sha256": "f866329bcfe3d3b9120c0d3721453190c6253c2ab9c02eac406ad8eb754d22ff",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP01/astra_r3",
+      "first_person": null,
+      "third_person": null,
+      "sceneLabel": "旧 Bistro",
+      "currentSceneVersionVerified": false,
+      "media": {}
+    },
+    {
+      "run_version": "astra_r2",
+      "protocol": "native_pixel_fpm_v2",
+      "task_id": "MP02",
+      "source_task_id": "MP06",
+      "asset_id": "orca_emerald",
+      "asset_key": "asset-0f6e5983ad7a340f",
+      "task_key": "task-63531e2bdf7408ad",
+      "model": "gpt-6-astra",
+      "status": "completed",
+      "SR": 0,
+      "checkpoints_completed": 0,
+      "checkpoints_total": 3,
+      "reason": "crowd_disk_overlap",
+      "clock": "simulation",
+      "time_budget_s": 150,
+      "elapsed_s": 11.03,
+      "sim_time_s": 11.03,
+      "model_calls_executed": 7,
+      "model_evidence": {
+        "started": 7,
+        "replies": 7,
+        "actions": 7
+      },
+      "source_config_sha256": "2b1642e58433f0ca1f5d5ff68504defae77a8fdcc3d4a2ae5c46480dc08663d8",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP02/astra_r2",
+      "first_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP02/astra_r2/first_person.mp4",
+      "third_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP02/astra_r2/third_person.mp4",
+      "video_quality": {
+        "frames": 112,
+        "first_person_bad_frames": 0,
+        "third_person_unverified_frames": 0,
+        "scope": "10 Hz physical simulation frames; model waiting time is not duplicated in video."
+      },
+      "sceneLabel": "Emerald 城市公园",
+      "currentSceneVersionVerified": false,
+      "media": {
+        "first": "evaluation/native-20261109/media/MP02/first_person.mp4",
+        "third": "evaluation/native-20261109/media/MP02/third_person.mp4"
+      }
+    },
+    {
+      "run_version": "astra_r2",
+      "protocol": "native_pixel_fpm_v2",
+      "task_id": "MP03",
+      "source_task_id": "MP07",
+      "asset_id": "g3v3_yonder_coastal_obstacles",
+      "asset_key": "asset-c5d7cffb6dc8cb3f",
+      "task_key": "task-86178fda12685ad6",
+      "model": "gpt-6-astra",
+      "status": "completed",
+      "SR": 0,
+      "checkpoints_completed": 0,
+      "checkpoints_total": 3,
+      "reason": "time_budget_exhausted",
+      "clock": "monotonic_wall",
+      "time_budget_s": 100,
+      "elapsed_s": 100.21738014597213,
+      "sim_time_s": 10.040000000000001,
+      "model_calls_executed": 2,
+      "model_evidence": {
+        "started": 2,
+        "replies": 2,
+        "actions": 2
+      },
+      "source_config_sha256": "4ebe7b1facfc887798b187c28afbf1eb50a95b9b3f7ec0b3a83b568b02acefd4",
+      "output": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP03/astra_r2",
+      "first_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP03/astra_r2/first_person.mp4",
+      "third_person": "/home/ubuntu/Navforge Forge/evaluations/workspace-runs/se_mp_astra_20261109/MP03/astra_r2/third_person.mp4",
+      "video_quality": {
+        "frames": 102,
+        "first_person_bad_frames": 0,
+        "third_person_unverified_frames": 0,
+        "scope": "10 Hz physical simulation frames; model waiting time is not duplicated in video."
+      },
+      "sceneLabel": "旧海岸障碍场",
+      "currentSceneVersionVerified": false,
+      "media": {
+        "first": "evaluation/native-20261109/media/MP03/first_person.mp4",
+        "third": "evaluation/native-20261109/media/MP03/third_person.mp4"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "dimension": "SG",
+      "name": "住宅",
+      "split": "train",
+      "source": "GRScenes",
+      "assetId": "MVUHLWYKTKJ5EAABAAAAAEI8",
+      "documentUsd": "grscenes_demo/scene02/scene_pbr.usda",
+      "sourceUrl": "https://huggingface.co/datasets/InternRobotics/GRScenes/tree/main/scenes/GRScenes-100",
+      "key": "sg-01",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_home",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#GnNudtdCJoG37Xx9mBecr0Runwh",
+      "media": {
+        "video": "assets/current/sg-01.mp4",
+        "poster": "assets/current/sg-01.jpg",
+        "seconds": 69.0,
+        "bytes": 1991494,
+        "sha256": "04c39308ecde3f8fb08b0e5b6c60a673bc1fb2e04561c7b2b299cd38816d7043",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_home/sg_home_tour.mp4",
+        "sourceSha256": "3b0d9312170fc692a2d868148df50b89a89cd69fb4e8edd9865a8c6e2415b0b8",
+        "sourceSeconds": 69.0
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_home/render.json",
+          "sha256": "a8341a1a81da90454a4698f401f998f001e129f8237c7207322aca73050b818c",
+          "summary": {
+            "hidden_for_top": 491,
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 215.2
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_home/route.json",
+          "sha256": "2048ca8f10053518d1466aed6c5ef51c8b8cc9cac636d766b9c1fadeb727b1ae",
+          "summary": {
+            "meta": {
+              "name": "sg_home",
+              "floor_z": 0.0,
+              "floor_m2": 116.7,
+              "body_free_m2": 29.7,
+              "main_m2": 26.8,
+              "main_share": 0.903,
+              "main_m2_doors_closed": 26.6,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 19086257,
+              "covered_share": 0.967,
+              "route_m": 58.0,
+              "frames": 1035,
+              "seconds": 69.0,
+              "n_stops": 18,
+              "min_exact_clearance_m": 0.197,
+              "p05_exact_clearance_m": 0.287,
+              "median_exact_clearance_m": 0.45,
+              "violations": 0,
+              "checked_points": 436,
+              "passed": true,
+              "doors_opened": 0
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/grscenes_demo/scene02/scene_pbr.usda",
+      "entrySha256": "94888fff81c9d0b6e982d0cc802c6a5f83d565db88b96bda0592930019d84393",
+      "summary": "GRScenes 住宅；漫游沿室内连通区域观察家具与相似实例。",
+      "physicalStatus": "同资产历史参考实跑已归档",
+      "boundary": "本页展示当前场景漫游；历史语义任务和模型成绩需逐配置复核。"
+    },
+    {
+      "dimension": "SG",
+      "name": "便利店",
+      "split": "train",
+      "source": "GRScenes",
+      "assetId": "MV4AFHQKTKJZ2AABAAAAADY8",
+      "documentUsd": "grscenes_demo/replacement_preview_01/scene_tasks.usda",
+      "sourceUrl": "https://huggingface.co/datasets/InternRobotics/GRScenes/tree/main/scenes/GRScenes-100",
+      "key": "sg-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_convenience",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#Oc2zdGcLYo7suNxOhIbc0f57npo",
+      "media": {
+        "video": "assets/current/sg-02.mp4",
+        "poster": "assets/current/sg-02.jpg",
+        "seconds": 62.733333,
+        "bytes": 3373858,
+        "sha256": "b248ed018ebc8c0445479f121c3ea7fdbe12ecededb417cc43c1315083e0e2d7",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_convenience/sg_convenience_tour.mp4",
+        "sourceSha256": "f775f540a635c41527d1112f35eecc178726178beb3b559e5589bc65ac1bcb41",
+        "sourceSeconds": 62.733333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_convenience/render.json",
+          "sha256": "962dcbaedc0f342fbc2fb11e0b9cc8c99f952f8bac6bd1857c2b19478354e671",
+          "summary": {
+            "hidden_for_top": 12,
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 328.9
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_convenience/route.json",
+          "sha256": "0efd1f854a9053114edb04d28ce5fae9709b55a2119f5d41fab08219667faf3e",
+          "summary": {
+            "meta": {
+              "name": "sg_convenience",
+              "floor_z": 0.0,
+              "floor_m2": 122.0,
+              "body_free_m2": 41.7,
+              "main_m2": 41.6,
+              "main_share": 0.997,
+              "main_m2_doors_closed": 40.9,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 26472435,
+              "covered_share": 0.967,
+              "route_m": 54.0,
+              "frames": 941,
+              "seconds": 62.7,
+              "n_stops": 21,
+              "min_exact_clearance_m": 0.292,
+              "p05_exact_clearance_m": 0.339,
+              "median_exact_clearance_m": 0.523,
+              "violations": 0,
+              "checked_points": 406,
+              "passed": true,
+              "doors_opened": 1
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/grscenes_demo/replacement_preview_01/scene_tasks.usda",
+      "entrySha256": "74ad2235efd1fb15badf62a41be4742bcd22616c6a15504b6811ffed8494fb13",
+      "summary": "GRScenes 便利店；使用 replacement_preview_01 的任务场景。",
+      "physicalStatus": "同资产历史参考实跑已归档",
+      "boundary": "采用替换后的便利店资产，不套用旧 scene04 或同号任务的成绩。"
+    },
+    {
+      "dimension": "SG",
+      "name": "诊所",
+      "split": "train",
+      "source": "GRScenes",
+      "assetId": "MVSGSAIKTKJ66AABAAAAADY8",
+      "documentUsd": "grscenes_demo/scene01/scene.usda",
+      "sourceUrl": "https://huggingface.co/datasets/InternRobotics/GRScenes/tree/main/scenes/GRScenes-100",
+      "key": "sg-03",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_clinic",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#Icbjdqh1PoquwXxdjdGcnIMjnZg",
+      "media": {
+        "video": "assets/current/sg-03.mp4",
+        "poster": "assets/current/sg-03.jpg",
+        "seconds": 15.266667,
+        "bytes": 671754,
+        "sha256": "01dc334088c64b133ebbf4293d8054487430cfc04caf699a038e2b1ac7919c04",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_clinic/sg_clinic_tour.mp4",
+        "sourceSha256": "4d031e1fc3ddf33fc642080752bb3d7324a656ba1cf8400434e941c01c973a53",
+        "sourceSeconds": 15.266667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_clinic/render.json",
+          "sha256": "ce96ffb53384c30086faa47b6b9e554fab61c8f6f396d8f19413a7d39c2f53bc",
+          "summary": {
+            "hidden_for_top": 17,
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 208.0
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_clinic/route.json",
+          "sha256": "8efb5c410af6363e80f8ba4f484c1f5b01071736dd1e1c04869be55048e047b5",
+          "summary": {
+            "meta": {
+              "name": "sg_clinic",
+              "floor_z": 0.0,
+              "floor_m2": 43.0,
+              "body_free_m2": 12.8,
+              "main_m2": 12.7,
+              "main_share": 0.992,
+              "main_m2_doors_closed": 12.2,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 5465762,
+              "covered_share": 0.961,
+              "route_m": 13.3,
+              "frames": 229,
+              "seconds": 15.3,
+              "n_stops": 5,
+              "min_exact_clearance_m": 0.372,
+              "p05_exact_clearance_m": 0.413,
+              "median_exact_clearance_m": 0.759,
+              "violations": 0,
+              "checked_points": 100,
+              "passed": true,
+              "doors_opened": 0
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/grscenes_demo/scene01/scene.usda",
+      "entrySha256": "96e3e11a973d02b04e8c6a39e32e3bb8307fa50ccd2236d82e2f40f78cc19de4",
+      "summary": "GRScenes 诊所；观察诊疗设备及其空间关系。",
+      "physicalStatus": "同资产历史参考实跑已归档",
+      "boundary": "相机路线的几何通过与机器人物理执行分别验收。"
+    },
+    {
+      "dimension": "SG",
+      "name": "超市",
+      "split": "test",
+      "source": "GRScenes",
+      "assetId": "MWF4WLIKTIFZIAABAAAAACY8",
+      "documentUsd": "grscenes_demo/scene03/scene_pbr.usda",
+      "sourceUrl": "https://huggingface.co/datasets/InternRobotics/GRScenes/tree/main/scenes/GRScenes-100",
+      "key": "sg-04",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_supermarket",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#H6eqdwjGYoLl8uxZ7ZRcomPsnDg",
+      "media": {
+        "video": "assets/current/sg-04.mp4",
+        "poster": "assets/current/sg-04.jpg",
+        "seconds": 120.466667,
+        "bytes": 6690085,
+        "sha256": "c1c817678aad675a2d93ef625fff38e7d1990443513c609b625cd0eebe48c879",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_supermarket/sg_supermarket_tour.mp4",
+        "sourceSha256": "3276a0831509c67921a9901a98b06c9a049d457919d87c1be751f752d2e2cba8",
+        "sourceSeconds": 120.466667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_supermarket/render.json",
+          "sha256": "fbaadda1191768b40558900afb431e5a9db98108c5e1ea80a0e5fb8b97f24421",
+          "summary": {
+            "hidden_for_top": 23,
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 343.2
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/sg_review_v3/out/sg_supermarket/route.json",
+          "sha256": "5b5f5054eed204610c448704ba2fe44f82eeb828b7f32d40179521f44a2ecaa9",
+          "summary": {
+            "meta": {
+              "name": "sg_supermarket",
+              "floor_z": 0.0,
+              "floor_m2": 282.6,
+              "body_free_m2": 102.1,
+              "main_m2": 100.0,
+              "main_share": 0.979,
+              "main_m2_doors_closed": 98.7,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 37318682,
+              "covered_share": 0.944,
+              "route_m": 107.9,
+              "frames": 1807,
+              "seconds": 120.5,
+              "n_stops": 40,
+              "min_exact_clearance_m": 0.229,
+              "p05_exact_clearance_m": 0.392,
+              "median_exact_clearance_m": 0.595,
+              "violations": 0,
+              "checked_points": 810,
+              "passed": true,
+              "doors_opened": 1
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/grscenes_demo/scene03/scene_pbr.usda",
+      "entrySha256": "b35767615cb40ae42c1ce332f2956e0ba3a3328c9e7afdb9c311249abab37c98",
+      "summary": "GRScenes 超市；在独立测试场景内观察货架与商品目标。",
+      "physicalStatus": "同资产历史参考实跑已归档",
+      "boundary": "旧 SG07–09 探索复测仍按原目标与旧版评分保留。"
+    },
+    {
+      "dimension": "SP",
+      "name": "超市",
+      "split": "train",
+      "source": "MansionWorld",
+      "assetId": "public_supermarket_3f_300_fp001#0",
+      "documentUsd": "sp_ramp_v1/tower10f/scene_zup.usda",
+      "sourceUrl": "https://huggingface.co/datasets/superbigsaw/MansionWorld",
+      "key": "sp-01",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sp_tour_v1/supermarket",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnlp2QenJYmcivB1Ia8z4SMe",
+      "media": {
+        "video": "assets/current/sp-01.mp4",
+        "poster": "assets/current/sp-01.jpg",
+        "seconds": 337.933333,
+        "bytes": 11992727,
+        "sha256": "eac546da0aebfaf61a95eaa7b63a95079925b825824fb7512204b1bf8ea87347",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sp_tour_v1/supermarket/tour.mp4",
+        "sourceSha256": "cbb1af4ea6970dacd24739cfd885622bd8b45401f6a5d20af3b000e1125e8095",
+        "sourceSeconds": 337.933333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sp_tour_v1/supermarket/tour.json",
+          "sha256": "8576d49215ac14c40d940c7c2a4b74748edfdb16e2d8e2bedf2c3ba0ebef98df",
+          "summary": {
+            "route_m": 310.9
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/sp_ramp_v1/tower10f/scene_zup.usda",
+      "entrySha256": "c781289b26eca1b0d80c77b09a40b2b5a78d2f630684190470d3740d669b44e9",
+      "summary": "MansionWorld 三层超市；连通路线约 310.9 m。",
+      "physicalStatus": "已有 1F↔2F 参考执行说明",
+      "boundary": "飞书记载外置约 10° 双折楼梯间，脚下是隐藏斜坡碰撞；更高楼层仅相机回放。"
+    },
+    {
+      "dimension": "SP",
+      "name": "医疗",
+      "split": "train",
+      "source": "MansionWorld",
+      "assetId": "public_healthcare_3f_300_fp001#0",
+      "documentUsd": "sp_ramp_v1/t_healthcare/scene_zup.usda",
+      "sourceUrl": "https://huggingface.co/datasets/superbigsaw/MansionWorld",
+      "key": "sp-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sp_tour_v1/healthcare",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn7NsYrBFMRvleDbVn28KFGf",
+      "media": {
+        "video": "assets/current/sp-02.mp4",
+        "poster": "assets/current/sp-02.jpg",
+        "seconds": 364.533333,
+        "bytes": 9601396,
+        "sha256": "e1de940247abdb0af1e801e04946c7b8e6cd580b7b7922c2ed25fda9ab3c199e",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sp_tour_v1/healthcare/tour.mp4",
+        "sourceSha256": "db7a8ca5b2072c56703be0edef1f24b5139c2f2204921d9e2d93817c4531cae1",
+        "sourceSeconds": 364.533333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sp_tour_v1/healthcare/tour.json",
+          "sha256": "9bc7d98084b68c934934c556196a418ccef4fb2667a7c8071b7438a7fddff072",
+          "summary": {
+            "route_m": 319.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/sp_ramp_v1/t_healthcare/scene_zup.usda",
+      "entrySha256": "c781289b26eca1b0d80c77b09a40b2b5a78d2f630684190470d3740d669b44e9",
+      "summary": "MansionWorld 三层医疗楼；连通路线约 319.0 m。",
+      "physicalStatus": "已有楼梯衍生版本实跑",
+      "boundary": "旧 compact 实跑与本页场景漫游分版本保留，不把真实台阶版本结论套到斜坡碰撞版本。"
+    },
+    {
+      "dimension": "SP",
+      "name": "酒店",
+      "split": "train",
+      "source": "MansionWorld",
+      "assetId": "public_hotel_dormitory_4f_400_fp004#1",
+      "documentUsd": "sp_ramp_v1/t_hotel/scene_zup.usda",
+      "sourceUrl": "https://huggingface.co/datasets/superbigsaw/MansionWorld",
+      "key": "sp-03",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sp_tour_v1/hotel",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnBzUMevV77Wj0QkObvEjymX",
+      "media": {
+        "video": "assets/current/sp-03.mp4",
+        "poster": "assets/current/sp-03.jpg",
+        "seconds": 619.666667,
+        "bytes": 16918225,
+        "sha256": "b5d4780157459236e3c2a0731bb0193dd579d1e6a0370562f2d60815a99e01bd",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sp_tour_v1/hotel/tour.mp4",
+        "sourceSha256": "d07c76a7d687d5ac5db18c8d93c69c4e1f87a9fdc00972d4fb851890b40a5427",
+        "sourceSeconds": 619.666667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sp_tour_v1/hotel/tour.json",
+          "sha256": "0a26b656bb1bb605d8449ee504d73d302c7c45ceec60c63268978d0ea5a1cc95",
+          "summary": {
+            "route_m": 554.1
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/sp_ramp_v1/t_hotel/scene_zup.usda",
+      "entrySha256": "c781289b26eca1b0d80c77b09a40b2b5a78d2f630684190470d3740d669b44e9",
+      "summary": "MansionWorld 四层酒店；连通路线约 554.1 m。",
+      "physicalStatus": "已有楼梯衍生版本实跑",
+      "boundary": "旧 1F→4F 酒店任务录像保留在历史归档；当前配置与其派生楼梯版本分别核对。"
+    },
+    {
+      "dimension": "SP",
+      "name": "娱乐",
+      "split": "test",
+      "source": "MansionWorld",
+      "assetId": "public_entertainment_3f_500_fp001#0",
+      "documentUsd": "sp_ent_v1/tower/scene_zup.usda",
+      "sourceUrl": "https://huggingface.co/datasets/superbigsaw/MansionWorld",
+      "key": "sp-04",
+      "tourDirectory": "/home/ubuntu/navforge_stages/sp_ent_v1/tour2",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnSrHZABj2joKu05fvwnKzMf",
+      "media": {
+        "video": "assets/current/sp-04.mp4",
+        "poster": "assets/current/sp-04.jpg",
+        "seconds": 366.666667,
+        "bytes": 10451836,
+        "sha256": "7ccb24df6ad596210b1d95397d6a03c69de54a7f62a691899f8faa0bd347233c",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/sp_ent_v1/tour2/tour.mp4",
+        "sourceSha256": "15ed775b31f75a954b2d8eea6349f1c90b8d70206df299bbb682b0e722408df7",
+        "sourceSeconds": 366.666667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/sp_ent_v1/tour2/tour.json",
+          "sha256": "c56a75b0afb221fc56549be84005089d680e7ac13c772c78f0b77b472336dfe2",
+          "summary": {
+            "route_m": 328.1
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/sp_ent_v1/tower/scene_zup.usda",
+      "entrySha256": "c781289b26eca1b0d80c77b09a40b2b5a78d2f630684190470d3740d669b44e9",
+      "summary": "MansionWorld 三层娱乐楼；采用更新后的娱乐场景漫游。",
+      "physicalStatus": "已有紧凑楼梯 1F↔2F 实跑说明",
+      "boundary": "飞书在该场景另注明紧凑楼梯间、每段 10 级真实台阶；本页视频仍为相机回放。"
+    },
+    {
+      "dimension": "GE",
+      "name": "住宅庭院",
+      "split": "train",
+      "source": "Superhive",
+      "assetId": "House15",
+      "documentUsd": "isaac_scenes_2026-10-30/house15_v2/scene/house15_isaac.usda",
+      "sourceUrl": "https://superhivemarket.com/products/2026-modern-modular-house-15-for-blender-eevee-and-cycles",
+      "key": "ge-01",
+      "tourDirectory": "/home/ubuntu/navforge_stages/ge_review_v1/tour/house15",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn5mkmLeOj86axlSyXktJGWh",
+      "media": {
+        "video": "assets/current/ge-01.mp4",
+        "poster": "assets/current/ge-01.jpg",
+        "seconds": 67.866667,
+        "bytes": 3845499,
+        "sha256": "92af37239bb6aaf36d369bf3cee5e62e9207cb465a532a496042b58e3bc837cf",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/ge_review_v1/tour/house15/house15_tour.mp4",
+        "sourceSha256": "53c27a26bd00d703eecfead115c902b11990b205ef38e1a4085cabf411a69c9b",
+        "sourceSeconds": 67.866667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/house15/render.json",
+          "sha256": "dc43a4612e400ee4cfe454b113c2dc17d7291328287d6dc727835e9015a65c5f",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/house15/route.json",
+          "sha256": "a761826569413fa4b4c0fcb7597d3199f60bc8857dc5646e9abf790b2082b841",
+          "summary": {
+            "meta": {
+              "name": "house15",
+              "route_m": 61.7,
+              "frames": 1018,
+              "seconds": 67.9,
+              "stops": 11,
+              "max_step": 0.24,
+              "z": [
+                0.01,
+                0.1
+              ],
+              "min_clear_m": 0.153,
+              "p05_clear_m": 0.303,
+              "violations": 0,
+              "checked": 309,
+              "doors": 0
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/isaac_scenes_2026-10-30/house15_v2/scene/house15_isaac.usda",
+      "entrySha256": "59e1c027384f5b4e497fc96d97f8616893227bc52b6c0385220e9994ebb1a724",
+      "summary": "House15 住宅与庭院连续场景；门已打开，漫游覆盖室内外。",
+      "physicalStatus": "暂无当前版本完整物理验收",
+      "boundary": "旧 GE03 烧烤架任务与后续重号记录保留原运行身份。"
+    },
+    {
+      "dimension": "GE",
+      "name": "街区餐馆",
+      "split": "train",
+      "source": "NVIDIA ORCA",
+      "assetId": "ORCA Bistro",
+      "documentUsd": "isaac_scenes_2026-10-30/bistro_v2/bistro_isaac.usda",
+      "sourceUrl": "https://developer.nvidia.com/orca/amazon-lumberyard-bistro",
+      "key": "ge-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/ge_review_v1/tour/bistro",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn4JnwgrGfTL4SUF2iRyzcJe",
+      "media": {
+        "video": "assets/current/ge-02.mp4",
+        "poster": "assets/current/ge-02.jpg",
+        "seconds": 172.066667,
+        "bytes": 9204856,
+        "sha256": "fc62aaa6cb594dcca9504204a14d8852fd4256f10ca756c4bc604b5339397513",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/ge_review_v1/tour/bistro/bistro_tour.mp4",
+        "sourceSha256": "665883b6e05293672ca288228effc536a99cbb5dd4f469a20a6f43d1071b956f",
+        "sourceSeconds": 172.066667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/bistro/render.json",
+          "sha256": "eadffe470230a963bd1f3d062d27945b25e2ee3c9511271fe490d55a1deb9d7a",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/bistro/route.json",
+          "sha256": "55fbaf7de018902ef9abe37b533c031c6301334a0970abca3a936638e540d8fa",
+          "summary": {
+            "meta": {
+              "name": "bistro",
+              "route_m": 166.3,
+              "frames": 2581,
+              "seconds": 172.1,
+              "stops": 16,
+              "max_step": 0.24,
+              "z": [
+                0.19,
+                0.52
+              ],
+              "min_clear_m": 0.381,
+              "p05_clear_m": 0.503,
+              "violations": 0,
+              "checked": 832,
+              "doors": 0
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/isaac_scenes_2026-10-30/bistro_v2/bistro_isaac.usda",
+      "entrySha256": "7d1bc35c5a7780fff2eb8d70a31f9a1baec477871eaa8d337f25a638479e1a73",
+      "summary": "ORCA Bistro 街区餐馆；覆盖餐馆与相邻街道。",
+      "physicalStatus": "历史 FPM 参考执行已归档",
+      "boundary": "历史 GE05/GE07 等版本的部分检查不能直接成为当前任务的模型成绩。"
+    },
+    {
+      "dimension": "GE",
+      "name": "褐石联排",
+      "split": "train",
+      "source": "Omniverse",
+      "assetId": "AEC Brownstone",
+      "documentUsd": "World_BrownstoneDemopack_Brownstone(8Gb).usd",
+      "sourceUrl": "https://docs.omniverse.nvidia.com/usd/latest/usd_content_samples/downloadable_packs.html",
+      "key": "ge-03",
+      "tourDirectory": "/home/ubuntu/navforge_stages/ge_review_v1/tour/brownstone",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnZXEDMUznW5q4xWKWWWirPh",
+      "media": {
+        "video": "assets/current/ge-03.mp4",
+        "poster": "assets/current/ge-03.jpg",
+        "seconds": 79.133333,
+        "bytes": 3190882,
+        "sha256": "027af702fd1fba001e7269eecf3344ddb737e64794745bc312e131d159192592",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/ge_review_v1/tour/brownstone/brownstone_tour.mp4",
+        "sourceSha256": "12330e919fb705ac9b8708d3e82813a7d76ad7ec92083878f709de9779e18b9e",
+        "sourceSeconds": 79.133333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/brownstone/render.json",
+          "sha256": "dcbf7f5a7300e85bb5774a881ba0652fa3d7801274b7583617b8be9e61c9e705",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/brownstone/route.json",
+          "sha256": "b9d004963f09f55392dbb57030939c16bbe3dd6832f72cca0884779b12baad70",
+          "summary": {
+            "meta": {
+              "name": "brownstone",
+              "route_m": 73.1,
+              "frames": 1187,
+              "seconds": 79.1,
+              "stops": 12,
+              "max_step": 0.3,
+              "z": [
+                -0.31,
+                2.43
+              ],
+              "min_clear_m": 0.178,
+              "p05_clear_m": 0.313,
+              "violations": 0,
+              "checked": 366,
+              "doors": 14
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/assets/source/brownstone_aec_v1/extract/Demos/AEC/BrownstoneDemo/World_BrownstoneDemopack_Brownstone(8Gb).usd",
+      "entrySha256": "a0031580779839d4f124769a6ed6c27f1a7bd05dfcf4d4422625e5be001d4a0f",
+      "summary": "AEC Brownstone 褐石联排；保留进楼前的真实台阶。",
+      "physicalStatus": "门前台阶仍是 G1 执行卡点",
+      "boundary": "漫游连通不代表 G1 已能通过门前台阶。"
+    },
+    {
+      "dimension": "GE",
+      "name": "湖畔住宅",
+      "split": "test",
+      "source": "ASWF DPEL",
+      "assetId": "4004 Moore Lane",
+      "documentUsd": "moorelane_review_v4.usda（派生）",
+      "sourceUrl": "https://dpel.aswf.io/4004-moore-lane",
+      "key": "ge-04",
+      "tourDirectory": "/home/ubuntu/navforge_stages/ge_review_v1/tour/moorelane",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnxxapTJLiCoaYkZYxfw9JTe",
+      "media": {
+        "video": "assets/current/ge-04.mp4",
+        "poster": "assets/current/ge-04.jpg",
+        "seconds": 102.4,
+        "bytes": 4149942,
+        "sha256": "e7786c1384ef6bcd22ce8af956c0b33f56de73c8c5aef22c54cdca95906d4fb6",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/ge_review_v1/tour/moorelane/moorelane_tour.mp4",
+        "sourceSha256": "0a5dd2f1c4ccdf4e475b059f8cdbf0edf8355ee9faef722d9a95574f1d2db92e",
+        "sourceSeconds": 102.4
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/moorelane/render.json",
+          "sha256": "b1ba58a15bbae4c7540370ed49753a7ab9160803fe3083a3a7e5ae2714de47b9",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/ge_review_v1/tour/moorelane/route.json",
+          "sha256": "733141deab0dff3fa92bbaebe7c01ff5937eb8ae8fea227d21865407cdff570e",
+          "summary": {
+            "meta": {
+              "name": "moorelane",
+              "route_m": 98.9,
+              "frames": 1536,
+              "seconds": 102.4,
+              "stops": 19,
+              "max_step": 0.24,
+              "z": [
+                -1.85,
+                0.0
+              ],
+              "min_clear_m": 0.242,
+              "p05_clear_m": 0.5,
+              "violations": 0,
+              "checked": 495,
+              "doors": 0
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/ge_review_v1/moorelane_review_v4.usda",
+      "entrySha256": "dc6ca62b2e6513c2727ae5c439c0957409d9ef70df1d7fdd5ead0374c5b475be",
+      "summary": "4004 Moore Lane 湖畔住宅；替换旧 Paris，作为测试场景。",
+      "physicalStatus": "暂无当前版本完整物理验收",
+      "boundary": "4004 Moore Lane Copyright 2023 Intel Corp. All rights reserved. 原场景许可与署名继续适用。"
+    },
+    {
+      "dimension": "LH",
+      "name": "工厂",
+      "split": "train",
+      "source": "NVIDIA",
+      "assetId": "USD_Explorer_Sample_NVD@10011",
+      "documentUsd": "handoff_work/g2/research_2026-10-19/factory_resource_acceptance_v1/portable_factory/assets/nvidia_factory/Usd_Explorer/Samples/Examples/2023_2/Factory/Factory.usd",
+      "sourceUrl": "https://docs.omniverse.nvidia.com/usd/latest/usd_content_samples/downloadable_packs.html",
+      "key": "lh-01",
+      "tourDirectory": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_factory",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn3bcYkQtt52rvDQ9NIpT6xd",
+      "media": {
+        "video": "assets/current/lh-01.mp4",
+        "poster": "assets/current/lh-01.jpg",
+        "seconds": 317.066667,
+        "bytes": 12205165,
+        "sha256": "b153d42495180187cfdbadad060647d02b141b0fe1108a68bef66a716fd5774e",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_factory/lh_factory_tour.mp4",
+        "sourceSha256": "2e77bc059a6141a448cb31155b543489621b5961f6233bfb7cdad661260f62c5",
+        "sourceSeconds": 317.066667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_factory/render.json",
+          "sha256": "459ad33b841d38ff2dca5a8aa3c45fa7ee7de43c861d75c716a9fb461eaafeb8",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "dome": 700.0,
+            "fill": 300.0,
+            "fixed_fill": 0,
+            "fixed_lights": 0,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 563.4
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_factory/route.json",
+          "sha256": "03ceafc6e31b041393cd030790045f081e98fcf775c959ef662386deacff5969",
+          "summary": {
+            "meta": {
+              "name": "lh_factory",
+              "floor_z": 0.0,
+              "floor_m2": 2200.0,
+              "body_free_m2": 1621.9,
+              "main_m2": 1607.7,
+              "main_share": 0.991,
+              "main_m2_doors_closed": 1541.7,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 2878541,
+              "covered_share": 0.966,
+              "route_m": 310.9,
+              "frames": 4756,
+              "seconds": 317.1,
+              "n_stops": 29,
+              "min_exact_clearance_m": 0.277,
+              "p05_exact_clearance_m": 0.502,
+              "median_exact_clearance_m": 0.8,
+              "violations": 0,
+              "checked_points": 2332,
+              "passed": true,
+              "doors_opened": 2,
+              "doors_total": 2
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/research_2026-10-19/factory_resource_acceptance_v1/portable_factory/assets/nvidia_factory/Usd_Explorer/Samples/Examples/2023_2/Factory/Factory.usd",
+      "entrySha256": "e187357a3ad9e09d3264537912701e0bf5d34ef52e47cc9a5628b573a52644c2",
+      "summary": "NVIDIA 工厂；历史 v5 有按序巡检、报到与返回任务。",
+      "physicalStatus": "历史 v5 三条参考实跑已归档",
+      "boundary": "历史记录验证特定碰撞与场景衍生版本，不自动说明当前所有任务均已验收。"
+    },
+    {
+      "dimension": "LH",
+      "name": "仓库",
+      "split": "train",
+      "source": "NVIDIA",
+      "assetId": "PhysicalAI-SimReady-Warehouse-01",
+      "documentUsd": "assets/source/simready_warehouse_01/physical_ai_simready_warehouse_01.usd",
+      "sourceUrl": "https://huggingface.co/datasets/nvidia/PhysicalAI-SimReady-Warehouse-01",
+      "key": "lh-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/lh_review_v1/wh_task_v5/tour_v2",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnkMDq8IxQEWP3fb4aawjRph",
+      "media": {
+        "video": "assets/current/lh-02.mp4",
+        "poster": "assets/current/lh-02.jpg",
+        "seconds": 409.4,
+        "bytes": 18368512,
+        "sha256": "f3d3729cdb9537df92f28f28b436242314e385c45cd41c07e5140e997ffc796e",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/lh_review_v1/wh_task_v5/tour_v2/lh_warehouse_v5_tour.mp4",
+        "sourceSha256": "3185d0aa7a6b3efbfe57c530d30686c64cf96586cbcd2f7018870892fb26a0ae",
+        "sourceSeconds": 409.4
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/wh_task_v5/tour_v2/render.json",
+          "sha256": "3c5f26930a486dd807044c82d01e0d073a2948117011c4fda53e52d35202d540",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "dome": 0,
+            "fill": 0,
+            "fixed_fill": 0,
+            "fixed_lights": 0,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 1289.1
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/wh_task_v5/tour_v2/route.json",
+          "sha256": "f48ee0f75b8618d948f63b898a8a023c1f7ecfcd5d3a086138256ba2d5694236",
+          "summary": {
+            "meta": {
+              "scope": "collision-aware static camera replay, no robot physics",
+              "old_route": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_warehouse/route.json",
+              "repaired_segments": 4,
+              "route_m": 400.81,
+              "min_grid_clearance_m": 0.403,
+              "grid_resolution_m": 0.05,
+              "frames": 6141,
+              "seconds": 409.4,
+              "speed_m_s": 1.0
+            },
+            "floor_z": -0.1
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/assets/source/simready_warehouse_01/physical_ai_simready_warehouse_01.usd",
+      "entrySha256": "4e01e55f055689ff0cd669f33c6c305f73add8903547eaf3ef070d515cb2ec8a",
+      "summary": "PhysicalAI SimReady 仓库；v5 漫游约 6 分 49 秒。",
+      "physicalStatus": "历史 v5 三条参考实跑已归档",
+      "boundary": "v5 连通图按实际碰撞重算，历史隐藏碰撞修订记录保留。"
+    },
+    {
+      "dimension": "LH",
+      "name": "办公室",
+      "split": "train",
+      "source": "NVIDIA",
+      "assetId": "Isaac/Environments/Office/office.usd",
+      "documentUsd": "handoff_work/g1/revisions/20261030_asset_compare/office/office.usd",
+      "sourceUrl": "https://docs.isaacsim.omniverse.nvidia.com/5.1.0/assets/usd_assets_environments.html",
+      "key": "lh-03",
+      "tourDirectory": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_office",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnnPAO3pp2YWV3VHm6NsWtGc",
+      "media": {
+        "video": "assets/current/lh-03.mp4",
+        "poster": "assets/current/lh-03.jpg",
+        "seconds": 452.0,
+        "bytes": 14382577,
+        "sha256": "33ea7a8587ac6e7a1b106ea31aa1764b0f5b9e203b367e061da7e3f589d54aa1",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_office/lh_office_tour.mp4",
+        "sourceSha256": "bf289b54680729cab5f0cb79b8fee4fdfc1b9a63fe82c4beb4ba44ca0fc37abf",
+        "sourceSeconds": 452.0
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_office/render.json",
+          "sha256": "d89667ffa14ee4577e42d4db2b6c8ffa72f410bacdd13afe0f79ab223585a606",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "dome": 0.0,
+            "fill": 0.0,
+            "fixed_fill": 0,
+            "fixed_lights": 0,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 829.3
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_office/route.json",
+          "sha256": "b3e304c6e68c57c19f5370f3ff85af082779709e413ca9da76b6bc94b50916be",
+          "summary": {
+            "meta": {
+              "name": "lh_office",
+              "floor_z": 0.0,
+              "floor_m2": 2207.1,
+              "body_free_m2": 1551.2,
+              "main_m2": 1472.7,
+              "main_share": 0.949,
+              "main_m2_doors_closed": 1288.5,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 258483,
+              "covered_share": 0.798,
+              "route_m": 416.5,
+              "frames": 6780,
+              "seconds": 452.0,
+              "n_stops": 45,
+              "min_exact_clearance_m": 0.399,
+              "p05_exact_clearance_m": 0.704,
+              "median_exact_clearance_m": 0.8,
+              "violations": 0,
+              "checked_points": 3124,
+              "passed": true,
+              "doors_opened": 5,
+              "doors_total": 56
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g1/revisions/20261030_asset_compare/office/office.usd",
+      "entrySha256": "32b83ba60d0b12d953ed693bb1c2ab8c51332defc4bbb8240eced5ad2e2ce8d0",
+      "summary": "NVIDIA 办公室；场景内多房间、会议区与返回任务。",
+      "physicalStatus": "历史 v6 三条参考实跑已归档",
+      "boundary": "历史任务的报到、等待与记忆语义不由相机漫游代替。"
+    },
+    {
+      "dimension": "LH",
+      "name": "医院",
+      "split": "test",
+      "source": "NVIDIA",
+      "assetId": "Isaac/Environments/Hospital/hospital.usd",
+      "documentUsd": "handoff_work/g2/lh04_rerender_2026-10-26/native_assets_v1/source_scene.usda",
+      "sourceUrl": "https://docs.isaacsim.omniverse.nvidia.com/5.1.0/assets/usd_assets_environments.html",
+      "key": "lh-04",
+      "tourDirectory": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_hospital",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnJWE6mHvgi16mbWLXkSHSqh",
+      "media": {
+        "video": "assets/current/lh-04.mp4",
+        "poster": "assets/current/lh-04.jpg",
+        "seconds": 577.933333,
+        "bytes": 12401885,
+        "sha256": "25eb5da6c5dc0c6fd0886dfa8cf3aa2179e5b995aa45b7ede79b3e70046280a5",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_hospital/lh_hospital_tour.mp4",
+        "sourceSha256": "9cfdf51478c4de3ff95bc91186ba186ec6401df2b8df80449f91025adf8986ef",
+        "sourceSeconds": 577.933333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_hospital/render.json",
+          "sha256": "7066306ab21886d7407c03ce65da983cad6cf3c969783abb05430ceaef74773b",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "dome": 1000.0,
+            "fill": 1500.0,
+            "fixed_fill": 12000.0,
+            "fixed_lights": 57,
+            "kind": "static camera replay, not robot physics",
+            "elapsed_s": 960.8
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/lh_review_v1/out/lh_hospital/route.json",
+          "sha256": "59a9b76ccdd3dafb4b5195498e00300533a4105a7424a91c5bff927208c04320",
+          "summary": {
+            "meta": {
+              "name": "lh_hospital",
+              "floor_z": 0.0,
+              "floor_m2": 1817.0,
+              "body_free_m2": 1239.8,
+              "main_m2": 1235.1,
+              "main_share": 0.996,
+              "main_m2_doors_closed": 883.5,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 995265,
+              "covered_share": 0.932,
+              "route_m": 514.7,
+              "frames": 8669,
+              "seconds": 577.9,
+              "n_stops": 60,
+              "min_exact_clearance_m": 0.249,
+              "p05_exact_clearance_m": 0.578,
+              "median_exact_clearance_m": 0.8,
+              "violations": 0,
+              "checked_points": 3860,
+              "passed": true,
+              "doors_opened": 24,
+              "doors_total": 48
+            },
+            "floor_z": 0.0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/lh04_rerender_2026-10-26/native_assets_v1/source_scene.usda",
+      "entrySha256": "93fdebebab2da3543e533c4557e39de4faf9d2e4e0fa869999ee9062dfa66ecf",
+      "summary": "NVIDIA 医院；作为长时程能力的独立测试场景。",
+      "physicalStatus": "暂无本轮完成的物理验收",
+      "boundary": "已有场景漫游；未将医院候选或旧运行视为本轮任务完成。"
+    },
+    {
+      "dimension": "MP",
+      "name": "餐厅",
+      "split": "train",
+      "source": "GRScenes",
+      "assetId": "MWF4WLIKTIFZIAABAAAAACA8",
+      "documentUsd": "handoff_work/g2/mp_review_2026-11-05/restaurant_scene/scene_pbr.usda",
+      "sourceUrl": "https://huggingface.co/datasets/InternRobotics/GRScenes/tree/main/scenes/GRScenes-100",
+      "key": "mp-01",
+      "tourDirectory": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_tours_2026-11-06_v2/restaurant",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnaImaVnvRogIFSyrelXyjNc",
+      "media": {
+        "video": "assets/current/mp-01.mp4",
+        "poster": "assets/current/mp-01.jpg",
+        "seconds": 65.2,
+        "bytes": 3395915,
+        "sha256": "5ea6db872c9568266de0e1454ff2c583522cda204e428926305b0305c9aebfc7",
+        "fullDecode": true,
+        "source": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_tours_2026-11-06_v2/restaurant/restaurant_tour.mp4",
+        "sourceSha256": "67bb241e4eea0e12f31ff7791a870fdbcb94f6d0b2ab40f10b5bab9de6579721",
+        "sourceSeconds": 65.2
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_tours_2026-11-06_v2/restaurant/render.json",
+          "sha256": "9c231dc18aebce2bf4618db67054241432f12ef11516c603555a2509ea74ace8",
+          "summary": {
+            "kind": "camera_oracle_replay",
+            "source_usd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_review_2026-11-05/restaurant_scene/scene_pbr.usda",
+            "source_unchanged": true,
+            "fps": 15,
+            "duration_s": 65.2,
+            "camera_h_m": 1.27,
+            "hfov_deg": 90,
+            "iso": 80,
+            "elapsed_s": 225.1
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_tours_2026-11-06_v2/restaurant/route.json",
+          "sha256": "f2e83760da4034d2223fdab79b2564b15902f632830b9de174363a74d6ebfa00",
+          "summary": {
+            "meta": {
+              "name": "restaurant",
+              "floor_z": 0.0,
+              "floor_m2": 284.8,
+              "body_free_m2": 99.0,
+              "main_m2": 98.7,
+              "main_share": 0.997,
+              "main_m2_doors_closed": 96.2,
+              "radius": 0.25,
+              "res": 0.05,
+              "band": [
+                0.12,
+                1.4
+              ],
+              "n_band_polys": 19967574,
+              "covered_share": 0.876,
+              "route_m": 63.2,
+              "frames": 978,
+              "seconds": 65.2,
+              "n_stops": 30,
+              "min_exact_clearance_m": 0.316,
+              "p05_exact_clearance_m": 0.402,
+              "median_exact_clearance_m": 0.8,
+              "violations": 0,
+              "checked_points": 474,
+              "passed": true,
+              "doors_opened": 0
+            },
+            "floor_z": 0.0
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_tours_2026-11-06_v2/restaurant/config.json",
+          "sha256": "6d2fd1b200b4d528a6f71ed76224ae23f40f398d786ae2d23ead5080938cb219",
+          "summary": {
+            "usd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_review_2026-11-05/restaurant_scene/scene_pbr.usda",
+            "iso": 80,
+            "map": "restaurant_map.png",
+            "name": "restaurant",
+            "source_sha256": "dc8ceda17a9f4689c437ce01254d9af361f9f7192d5220ae50c076801e1d3ee6"
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_review_2026-11-05/restaurant_scene/scene_pbr.usda",
+      "entrySha256": "dc8ceda17a9f4689c437ce01254d9af361f9f7192d5220ae50c076801e1d3ee6",
+      "summary": "GRScenes 餐厅；19 个静态人物，主连通区约 98.7 m²，参考路线约 58.4 m。",
+      "physicalStatus": "暂无当前版本整路线验收",
+      "boundary": "视频使用有效 v2 漫游；人物为静态摆放，动态行人任务仍待补充。"
+    },
+    {
+      "dimension": "MP",
+      "name": "海岸障碍场",
+      "split": "train",
+      "source": "Yonder + Poly Haven",
+      "assetId": "yonder_gentle_v2",
+      "documentUsd": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_gentle_v2.usda",
+      "sourceUrl": "https://huggingface.co/datasets/astralhf/yonder",
+      "key": "mp-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_v2",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnxGNVqFxsT7CPt1azKXFjbd",
+      "media": {
+        "video": "assets/current/mp-02.mp4",
+        "poster": "assets/current/mp-02.jpg",
+        "seconds": 245.466667,
+        "bytes": 13809030,
+        "sha256": "64338c22db6394bed6193b9e88b573f203e94ed44a8d7d12cb938a043531be09",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_v2/yonder_v2_tour.mp4",
+        "sourceSha256": "0b83256bf33274eaec5af3b0241b9943a713d13edb197f44dac45ef5755b401a",
+        "sourceSeconds": 245.466667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_v2/render.json",
+          "sha256": "d331f4caec9821390867813b10fedd1c8793711c69f61060125744a3b1133ee0",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_v2/route.json",
+          "sha256": "011148d7e32716f1be92af19ece78e841afcee6c3cd04fef9b90018c705f34da",
+          "summary": {
+            "meta": {
+              "name": "yonder",
+              "route_share_gt10": 0.015,
+              "route_share_gt12": 0.0,
+              "slope_limit_deg": 10.0,
+              "route_m": 243.5,
+              "frames": 3682,
+              "seconds": 245.5,
+              "stops": 23,
+              "min_clear_m": 0.335,
+              "p05_clear_m": 0.641,
+              "violations": 0,
+              "checked": 1218,
+              "path_slope_max_deg": 10.7,
+              "path_slope_p95_deg": 8.2,
+              "z": [
+                -0.17,
+                2.85
+              ],
+              "main_m2": 22766,
+              "terrain_m2": 30976,
+              "share_le_limit": 0.801
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/mp_candidates_v1/yonder_gentle_v2.usda",
+      "entrySha256": "4012a25306bbc2e2cf04d459574b5e961ac2e11b340e6b788e035e9ecba9e340",
+      "summary": "Yonder 海岸低起伏 v2 + Poly Haven；37 个障碍道具，最窄约 1 m。",
+      "physicalStatus": "新地形任务需重新执行",
+      "boundary": "地形起伏缩为 0.45 倍；旧 MP07/MP03 模型运行不可仅按编号映射为新 v2 场景成绩。"
+    },
+    {
+      "dimension": "MP",
+      "name": "林缘障碍场",
+      "split": "train",
+      "source": "Poly Haven",
+      "assetId": "outdoor_precision_forest_v1",
+      "documentUsd": "handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/scene_visual_v2.usda",
+      "sourceUrl": "https://polyhaven.com/",
+      "key": "mp-03",
+      "tourDirectory": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/tour_visual_v2",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnh3szECZIzGN7M4MQsWzPRh",
+      "media": {
+        "video": "assets/current/mp-03.mp4",
+        "poster": "assets/current/mp-03.jpg",
+        "seconds": 119.6,
+        "bytes": 6763351,
+        "sha256": "461cc591e26017e5805ac4b177f1dc4f606b5b519566c00d39eb9fc7041e2b30",
+        "fullDecode": true,
+        "source": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/tour_visual_v2/mp01_tour.mp4",
+        "sourceSha256": "6b01f6796c7099ce41d4475886905d70e6710fa1f88e3a841969fefcf6a6d619",
+        "sourceSeconds": 119.6
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/tour_visual_v2/render.json",
+          "sha256": "24c9cc76f3f9a75eed92afa9170b01394ebddc9b621a292166c9f6fde2613f74",
+          "summary": {
+            "kind": "camera_oracle_replay",
+            "source_usd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/scene_visual_v2.usda",
+            "source_unchanged": true,
+            "fps": 15,
+            "duration_s": 119.6,
+            "camera_h_m": 1.27,
+            "hfov_deg": 90,
+            "iso": 200,
+            "elapsed_s": 283.0
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/tour_visual_v2/route.json",
+          "sha256": "cd289d6ea30339553875aa8a10e82a838e2555a461537c244989cf1ad66577f2",
+          "summary": {
+            "meta": {
+              "kind": "static_grid_geometry",
+              "name": "mp01",
+              "main_m2": 321.8,
+              "route_m": 109.3,
+              "frames": 1794,
+              "seconds": 119.6,
+              "radius_m": 0.28,
+              "max_neighbor_step_m": 0.05,
+              "grid_m": 0.05,
+              "min_raster_clearance_m": 0.427,
+              "max_stop_snap_m": 0.376,
+              "doors": 0,
+              "physics_validated": false
+            }
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/tour_visual_v2/config.json",
+          "sha256": "66949b2a9dbbe6025c40289ba7249b299a1b15ffc517c792d50726cb3d2d4698",
+          "summary": {
+            "name": "mp01",
+            "usd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/scene_visual_v2.usda",
+            "iso": 200,
+            "source_sha256": "1e1af5729907a77fbe619b7f878f66fac9accebbdb57e01d28d430b540a068e1"
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/mp01/scene_visual_v2.usda",
+      "entrySha256": "1e1af5729907a77fbe619b7f878f66fac9accebbdb57e01d28d430b540a068e1",
+      "summary": "Poly Haven 林缘障碍场；导航区 16×24 m，主连通区约 321.8 m²。",
+      "physicalStatus": "暂无当前版本整路线验收",
+      "boundary": "使用修复草叶透明材质的 visual_v2；几何与碰撞沿用原版本。"
+    },
+    {
+      "dimension": "MP",
+      "name": "城市公园",
+      "split": "test",
+      "source": "NVIDIA ORCA",
+      "assetId": "ORCA Emerald Square",
+      "documentUsd": "handoff_work/g3_v2/derived/mp05_mp06_rebuild/emerald_converted/emerald_scene.usda",
+      "sourceUrl": "https://developer.nvidia.com/orca/nvidia-emerald-square",
+      "key": "mp-04",
+      "tourDirectory": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/emerald",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn2yA8XHqoCXTvh5y3wis4ef",
+      "media": {
+        "video": "assets/current/mp-04.mp4",
+        "poster": "assets/current/mp-04.jpg",
+        "seconds": 875.066667,
+        "bytes": 34287033,
+        "sha256": "c34fd6c7eee61c8d2c5af6254a717cdd2114ec38020fca11b56ba25e6ee4d808",
+        "fullDecode": true,
+        "source": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/emerald/emerald_tour.mp4",
+        "sourceSha256": "9d87901b4bafb2568e2b5cdcac7967596ee54a713b62ba5d0b7b3584fff8e736",
+        "sourceSeconds": 875.066667
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/emerald/render.json",
+          "sha256": "a3d094e9acdf3ae6e43c0ade2cdf220011dddaa1dab24496d7b58eaf64c89092",
+          "summary": {
+            "kind": "camera_oracle_replay",
+            "source_usd": "/home/ubuntu/Navforge Forge/handoff_work/g3_v2/derived/mp05_mp06_rebuild/emerald_converted/emerald_scene.usda",
+            "source_unchanged": true,
+            "fps": 15,
+            "duration_s": 875.0666666666667,
+            "camera_h_m": 1.27,
+            "hfov_deg": 90,
+            "iso": 200,
+            "elapsed_s": 498.2
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/emerald/route.json",
+          "sha256": "3036d8de6bb12c868617f304d4fdea97de6ffb89165a4e12387f046498341390",
+          "summary": {
+            "meta": {
+              "kind": "static_grid_geometry",
+              "name": "emerald",
+              "main_m2": 17515.1,
+              "route_m": 865.18,
+              "frames": 13126,
+              "seconds": 875.0666666666667,
+              "radius_m": 0.28,
+              "max_neighbor_step_m": 0.12,
+              "grid_m": 0.1,
+              "min_raster_clearance_m": 0.57,
+              "max_stop_snap_m": 0.237,
+              "doors": 0,
+              "physics_validated": false
+            }
+          }
+        },
+        {
+          "path": "/home/ubuntu/Navforge Forge/handoff_work/g2/mp_asset_completion_2026-11-06_v1/emerald/config.json",
+          "sha256": "77f2245a75abb683810f633211146db0b0cadfac3b2e322397243ac771ff2d38",
+          "summary": {
+            "name": "emerald",
+            "usd": "/home/ubuntu/Navforge Forge/handoff_work/g3_v2/derived/mp05_mp06_rebuild/emerald_converted/emerald_scene.usda",
+            "iso": 200,
+            "source_sha256": "51cd00c4cc1695071da5426967bddd09eee85e7cb6211b5cee5d27dad8c0c709"
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/Navforge Forge/handoff_work/g3_v2/derived/mp05_mp06_rebuild/emerald_converted/emerald_scene.usda",
+      "entrySha256": "51cd00c4cc1695071da5426967bddd09eee85e7cb6211b5cee5d27dad8c0c709",
+      "summary": "ORCA Emerald Square 城市公园；覆盖公园与主要街道，无可进入室内。",
+      "physicalStatus": "存在待核对版本的模型失败记录",
+      "boundary": "漫游跨过两处约 20 cm 路缘并平滑相机高度，不能据此认定 G1 可通行。"
+    },
+    {
+      "dimension": "SE",
+      "name": "Alabama A&M 操场",
+      "split": "train",
+      "source": "Sketchfab（CC BY 4.0）",
+      "assetId": "87cc324ce38043efa00bcc9c6a39d5ee",
+      "documentUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama/stage.usda",
+      "sourceUrl": "https://sketchfab.com/3d-models/87cc324ce38043efa00bcc9c6a39d5ee",
+      "key": "se-01",
+      "tourDirectory": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnloIKCa79CAzKR6Be11sGne",
+      "media": {
+        "video": "assets/current/se-01.mp4",
+        "poster": "assets/current/se-01.jpg",
+        "seconds": 134.0,
+        "bytes": 2922050,
+        "sha256": "de5fa547459cac65664809009a0340b73c9d39b8acb2d7f213c48296b0807ed7",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama/alabama_tour.mp4",
+        "sourceSha256": "426a5b3d75c8783fe844f971bf0cdd626b9ca4da4c2243a9ca1387ec9e3cb0a1",
+        "sourceSeconds": 134.0
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama/render.json",
+          "sha256": "f012c2ac481b1dabc97d5573b8a6ae09058a7059b53c76e7386d805fafbd5555",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama/route.json",
+          "sha256": "b0ef0661a00f42aa7a85fa2f493cb1eda3f7d4fc8800a8b36213ab620dfccd5a",
+          "summary": {
+            "meta": {
+              "name": "alabama",
+              "route": "lane 1, 0.6 m outside the kerb line, full lap",
+              "route_m": 401.7,
+              "frames": 2010,
+              "seconds": 134.0,
+              "z": [
+                -21.83,
+                -21.39
+              ],
+              "path_2m_slope_max": 0.47,
+              "surface_dev_max_m": 0.012,
+              "surface_dev_p95_m": 0.005,
+              "physics_validated": false
+            },
+            "floor_z": 0
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/alabama/stage.usda",
+      "entrySha256": "76fed726ed0a0d7570066f7c6c47257be883f827db4551291d78ff3d74480e0a",
+      "summary": "Alabama A&M 第一道人行跑道整圈约 401.7 m；G1 直道实测约 1.42 m/s。",
+      "physicalStatus": "仅直道测速证据",
+      "boundary": "南弯网格、记分牌与灯架仍有瑕疵；直道测速不替代整圈限时任务。"
+    },
+    {
+      "dimension": "SE",
+      "name": "海岸越野 seed02",
+      "split": "train",
+      "source": "Yonder",
+      "assetId": "coastal_seed02（×0.35）",
+      "documentUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal/stage.usda",
+      "sourceUrl": "https://huggingface.co/datasets/astralhf/yonder",
+      "key": "se-02",
+      "tourDirectory": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcnAHGp3g3GrzyJAD9oOH8eCh",
+      "media": {
+        "video": "assets/current/se-02.mp4",
+        "poster": "assets/current/se-02.jpg",
+        "seconds": 353.6,
+        "bytes": 19914017,
+        "sha256": "123fcf6032cb30d17563b9800a0036b7b7485c9c459ae92f65dee8782ff40b36",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal/coastal_tour.mp4",
+        "sourceSha256": "e316dd35b17f163875e9d59620f1668b86d40fb41d5e0659ad2eacd6a44dd1cb",
+        "sourceSeconds": 353.6
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal/render.json",
+          "sha256": "46391351942661bbddf25e5a591974ae05d76e9a3b70befcf5587569c3a85c76",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal/route.json",
+          "sha256": "b549659bf23c6a8e0eaa319438d51b91805b9f49ecf4893d524deaaa58d2e1ab",
+          "summary": {
+            "meta": {
+              "name": "coastal",
+              "slope_limit_deg": 8.0,
+              "route_m": 1007.2,
+              "frames": 5304,
+              "seconds": 353.6,
+              "stops": 16,
+              "min_clear_m": 1.033,
+              "violations": 0,
+              "checked": 2622,
+              "route_share_gt8": 0.024,
+              "route_slope_max": 8.6,
+              "path_2m_slope_max": 8.4,
+              "path_2m_slope_p95": 6.9,
+              "z": [
+                -5.75,
+                4.18
+              ],
+              "main_m2": 33742,
+              "terrain_m2": 46656,
+              "max_tilt_note": "camera pitch fixed level",
+              "physics_validated": false
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal/stage.usda",
+      "entrySha256": "10e72a4d24b824d56b1576c43d1ca12ff2e3221d98322074424e76199c2dceed",
+      "summary": "Yonder coastal_seed02 ×0.35；参考路线约 1007.2 m，最大坡度约 8.6°。",
+      "physicalStatus": "仅局部坡地测速证据",
+      "boundary": "模型原生协议 SE05 有独立失败记录；配置哈希和当前场景入口尚未建立同版本关联。"
+    },
+    {
+      "dimension": "SE",
+      "name": "沙漠越野 seed01",
+      "split": "train",
+      "source": "Yonder",
+      "assetId": "desert_seed01（×0.2）",
+      "documentUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/desert/stage.usda",
+      "sourceUrl": "https://huggingface.co/datasets/astralhf/yonder",
+      "key": "se-03",
+      "tourDirectory": "/home/ubuntu/navforge_stages/se_yonder_v1/desert",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcndXP8b9DbtRH7aDYCAzizYf",
+      "media": {
+        "video": "assets/current/se-03.mp4",
+        "poster": "assets/current/se-03.jpg",
+        "seconds": 179.4,
+        "bytes": 2542183,
+        "sha256": "85187633e22fab886f8c5f6ffa78b2bbce1bacb05e5eef99d68d3e07a437228f",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/se_yonder_v1/desert/desert_tour.mp4",
+        "sourceSha256": "dcf65bd012b8da83cb036d302d1714b75a5d8055887d6cffc8fe3b07f85343b8",
+        "sourceSeconds": 179.4
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/desert/render.json",
+          "sha256": "bc0039503bb0fee39f9ac9c0c4e2898b6a168d8b7ff7ace59ac78ae08b5eaa70",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/desert/route.json",
+          "sha256": "4104c56af420610003d714b6d2d1d5e775a55edc8709d1df24f6049d2635171c",
+          "summary": {
+            "meta": {
+              "name": "desert",
+              "slope_limit_deg": 8.0,
+              "route_m": 486.1,
+              "frames": 2691,
+              "seconds": 179.4,
+              "stops": 9,
+              "min_clear_m": 0.673,
+              "violations": 0,
+              "checked": 1286,
+              "route_share_gt8": 0.03,
+              "route_slope_max": 9.1,
+              "path_2m_slope_max": 9.2,
+              "path_2m_slope_p95": 7.0,
+              "z": [
+                -3.12,
+                1.89
+              ],
+              "main_m2": 21142,
+              "terrain_m2": 30976,
+              "max_tilt_note": "camera pitch fixed level",
+              "physics_validated": false
+            }
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/desert/stage.usda",
+      "entrySha256": "de75c23671592b9d32398b4e856baac3d4b3f1f45db7d52e92980a1b46cb9eb2",
+      "summary": "Yonder desert_seed01 ×0.2；参考路线约 486.1 m，最大坡度约 9.1°。",
+      "physicalStatus": "仅局部坡地测速证据",
+      "boundary": "局部实测约 1.2–1.67 m/s；不等于完整定向越野任务通过。"
+    },
+    {
+      "dimension": "SE",
+      "name": "海岸越野 seed03",
+      "split": "test",
+      "source": "Yonder",
+      "assetId": "coastal_seed03（×0.35）",
+      "documentUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/physics_v1.usda",
+      "sourceUrl": "https://huggingface.co/datasets/astralhf/yonder",
+      "key": "se-04",
+      "tourDirectory": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1",
+      "documentUrl": "https://xcno7284rraf.feishu.cn/wiki/BPKpwbxnBicP4kkCfi7cwLcvnNg#doxcn6NQjMGRXWHv2FH31VI4Nbc",
+      "media": {
+        "video": "assets/current/se-04.mp4",
+        "poster": "assets/current/se-04.jpg",
+        "seconds": 189.733333,
+        "bytes": 10707937,
+        "sha256": "50cbc42ef780c9688efb2bb16f79e8f4e17a5b0190152d6afa9501ca8bd29604",
+        "fullDecode": true,
+        "source": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/coastal_test_seed03_v1_tour.mp4",
+        "sourceSha256": "9dcfe6e82fcc8d61bc4b919a61f39348e66466549b2acc43c6976cfeb359016c",
+        "sourceSeconds": 189.733333
+      },
+      "evidence": [
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/render.json",
+          "sha256": "d07655523c6143e1ac15889e51e304758136a3446a29b8be2e94e8c7fbbf9295",
+          "summary": {
+            "camera_h": 1.27,
+            "hfov": 90,
+            "kind": "static camera replay, not robot physics"
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/route.json",
+          "sha256": "36e0ab8afb0bb2964d1fe4b1c3ba83a188d3d570eefd252737d37580a12fcc2a",
+          "summary": {
+            "meta": {
+              "name": "coastal_seed03_z035",
+              "slope_limit_deg": 8.0,
+              "route_m": 459.1,
+              "frames": 2846,
+              "seconds": 189.7,
+              "stops": 4,
+              "min_clear_m": 0.822,
+              "violations": 0,
+              "checked": 1423,
+              "route_share_gt8": 0.024,
+              "route_slope_max": 8.6,
+              "path_2m_slope_max": 8.8,
+              "path_2m_slope_p95": 6.5,
+              "z": [
+                -1.36,
+                2.18
+              ],
+              "main_m2": 25688,
+              "terrain_m2": 38416,
+              "max_tilt_note": "camera pitch fixed level",
+              "physics_validated": false
+            }
+          }
+        },
+        {
+          "path": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/acceptance.json",
+          "sha256": "2eff03ab88e4cb8ee2dab54cef3a7e2c5f3cf59af80d6ce953ce47d3e2be220d",
+          "summary": {
+            "accepted": true,
+            "kind": "G1 gravity-on oracle reference route execution, not navigation model evaluation",
+            "duration_s": 429.5,
+            "distance_xy_m": 459.7324630247467,
+            "final_goal_error_m": 0.3983679870574149,
+            "final_1_5s_max_displacement_m": 0.04932071721832446,
+            "model_evaluated": false,
+            "result_file": "/home/ubuntu/Navforge Forge/handoff_work/g2/se_coastal03_accept_2026-11-07_v1/physics_v4/outputs/unitree_g1/20261108_040331/result.json",
+            "result_sha256": "29b57d271ea0abe6136b5c6ce190c0e8d6890e756b99cb686f0d90792aaa8da0",
+            "route_sha256": "36e0ab8afb0bb2964d1fe4b1c3ba83a188d3d570eefd252737d37580a12fcc2a",
+            "scene_physics_layer_sha256": "85f1c677aee702688a83bf0c9364b6f343ce2b15be63cc75648f3f35bc19a28f"
+          }
+        }
+      ],
+      "entryVerified": true,
+      "serverUsd": "/home/ubuntu/navforge_stages/se_yonder_v1/coastal_test_seed03_v1/physics_v1.usda",
+      "entrySha256": "85f1c677aee702688a83bf0c9364b6f343ce2b15be63cc75648f3f35bc19a28f",
+      "summary": "独立 coastal_seed03 ×0.35；G1 完整参考路线 459.1 m，执行 429.5 s，实走约 459.73 m。",
+      "physicalStatus": "G1 整路线参考执行通过 · v4",
+      "boundary": "终点误差 0.398 m，末 1.5 s 最大平移 0.049 m，无实际障碍接触；下方 189.7 s 视频为相机回放，不是机器人录像或模型成绩。"
+    }
+  ]
+}
