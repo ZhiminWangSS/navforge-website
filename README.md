@@ -94,8 +94,14 @@ systemctl --user disable --now navforge-website-sync.timer  # 停止自动拉取
 
 ## 交互式测评看板
 
-本地分支 `codex/local-evaluation-dashboard` 的主导航「测评」打开 `evaluation/index.html`。按用户要求，此看板仅在本地使用，不发布到 GitHub Pages 或服务器主站。启动本地服务后无需 SSH 转发。页面支持任务切换、三视角/第三人称切换和动作时间轴。
+主导航「测评」打开 `evaluation/index.html`，与主体网页一起发布到 GitHub Pages。公开访问无需 SSH；本地预览仍可使用。页面支持任务切换、三视角/第三人称切换和动作时间轴。
 
 2026-11-09 从服务器原看板导入 9 项正式复测，原成绩、动作与视频时间映射不变。页面明确标注旧版简单档/完全档评分；未将待运行的 SE/MP 或新部分可见协议混入旧成绩。来源记录在 `data/evaluation-provenance.json`。`public/evaluation/media/` 为保持原时长的 H.264 展示副本，原始证据仍在服务器；时长核验见 `data/evaluation-media.json`。
 
 更新看板时应同时同步内嵌 dataset 与相应媒体，保留原评分口径和运行身份；执行 `python3 scripts/build.py` 会校验全部本地录像路径。不要将 localhost/SSH 隧道地址写成公开页面的媒体地址。
+
+## 发布体积（2026-11-09）
+
+当前完整静态站点约 541 MB（516 MiB），其中测评看板及 18 个录像展示文件约 232 MB（221 MiB）；最大单文件约 84 MB（80 MiB）。代码、JSON 和展示媒体进入仓库，`_site/` 仅作为 Actions 构建产物，不重复提交。Git 历史单独占用存储，后续替换大视频会继续增长。
+
+本次同步仅发布网页已有内容；仿真器、资产数据集、完整实验日志和原始录像继续保留在 JiangXing。看板是已整理的历史结果，SE/MP 待完成任务不记作正式成绩。
