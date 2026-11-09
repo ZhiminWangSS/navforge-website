@@ -1,0 +1,146 @@
+[
+  {
+    "task": "SG07",
+    "kind": "three_views",
+    "file": "SG07-three_views.mp4",
+    "source_duration": 62.0,
+    "duration": 62.0,
+    "bytes": 4742541
+  },
+  {
+    "task": "SG07",
+    "kind": "third_person",
+    "file": "SG07-third_person.mp4",
+    "source_duration": 62.0,
+    "duration": 62.0,
+    "bytes": 8559941
+  },
+  {
+    "task": "SG08",
+    "kind": "three_views",
+    "file": "SG08-three_views.mp4",
+    "source_duration": 53.5,
+    "duration": 53.5,
+    "bytes": 4034844
+  },
+  {
+    "task": "SG08",
+    "kind": "third_person",
+    "file": "SG08-third_person.mp4",
+    "source_duration": 53.5,
+    "duration": 53.5,
+    "bytes": 7279029
+  },
+  {
+    "task": "SG09",
+    "kind": "three_views",
+    "file": "SG09-three_views.mp4",
+    "source_duration": 178.3,
+    "duration": 178.3,
+    "bytes": 13537722
+  },
+  {
+    "task": "SG09",
+    "kind": "third_person",
+    "file": "SG09-third_person.mp4",
+    "source_duration": 178.3,
+    "duration": 178.3,
+    "bytes": 25872607
+  },
+  {
+    "task": "SG04",
+    "kind": "three_views",
+    "file": "SG04-three_views.mp4",
+    "source_duration": 8.6,
+    "duration": 8.6,
+    "bytes": 388194
+  },
+  {
+    "task": "SG04",
+    "kind": "third_person",
+    "file": "SG04-third_person.mp4",
+    "source_duration": 8.6,
+    "duration": 8.6,
+    "bytes": 963785
+  },
+  {
+    "task": "GE03",
+    "kind": "three_views",
+    "file": "GE03-three_views.mp4",
+    "source_duration": 577.7,
+    "duration": 577.7,
+    "bytes": 39825507
+  },
+  {
+    "task": "GE03",
+    "kind": "third_person",
+    "file": "GE03-third_person.mp4",
+    "source_duration": 575.9,
+    "duration": 575.9,
+    "bytes": 83793044
+  },
+  {
+    "task": "SG05",
+    "kind": "three_views",
+    "file": "SG05-three_views.mp4",
+    "source_duration": 83.7,
+    "duration": 83.7,
+    "bytes": 2468065
+  },
+  {
+    "task": "SG05",
+    "kind": "third_person",
+    "file": "SG05-third_person.mp4",
+    "source_duration": 83.7,
+    "duration": 83.7,
+    "bytes": 6235802
+  },
+  {
+    "task": "GE01",
+    "kind": "three_views",
+    "file": "GE01-three_views.mp4",
+    "source_duration": 103.5,
+    "duration": 103.5,
+    "bytes": 7553871
+  },
+  {
+    "task": "GE01",
+    "kind": "third_person",
+    "file": "GE01-third_person.mp4",
+    "source_duration": 103.5,
+    "duration": 103.5,
+    "bytes": 22001627
+  },
+  {
+    "task": "SG06",
+    "kind": "three_views",
+    "file": "SG06-three_views.mp4",
+    "source_duration": 27.7,
+    "duration": 27.7,
+    "bytes": 1056715
+  },
+  {
+    "task": "SG06",
+    "kind": "third_person",
+    "file": "SG06-third_person.mp4",
+    "source_duration": 27.7,
+    "duration": 27.7,
+    "bytes": 2176994
+  },
+  {
+    "task": "SG03",
+    "kind": "three_views",
+    "file": "SG03-three_views.mp4",
+    "source_duration": 8.2,
+    "duration": 8.2,
+    "bytes": 383668
+  },
+  {
+    "task": "SG03",
+    "kind": "third_person",
+    "file": "SG03-third_person.mp4",
+    "source_duration": 8.2,
+    "duration": 8.2,
+    "bytes": 934573
+  }
+]

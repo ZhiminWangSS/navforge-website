@@ -1,0 +1,26 @@
+{
+  "imported_at": "2026-11-09",
+  "source": "JiangXing navforge_eval dashboard",
+  "source_html_sha256": "7b3d09f0a262106a1d0b4cacb83d718b599e86eb856f0fa0b1cecc5e1adc0ca6",
+  "tasks": [
+    "SG07",
+    "SG08",
+    "SG09",
+    "SG04",
+    "GE03",
+    "SG05",
+    "GE01",
+    "SG06",
+    "SG03"
+  ],
+  "scores_preserved": true,
+  "pending_tasks_excluded": [
+    "SE01",
+    "SE03",
+    "SE05",
+    "MP01",
+    "MP02",
+    "MP03"
+  ],
+  "media": "H.264 compressed display copies, original duration and timestamps retained; source evidence unchanged"
+}

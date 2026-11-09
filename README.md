@@ -91,3 +91,11 @@ systemctl --user disable --now navforge-website-sync.timer  # 停止自动拉取
 ## 素材
 
 本站为研究展示；原场景、视频、字体和其他素材沿用各自许可与署名，来源见页面「素材与说明」及各案例。没有把第三方资产重新授予开源许可。仓库仅包含展示媒体，不包含完整场景资产。网站为公开访问，不含原站密码、会话密钥或部署凭据。
+
+## 交互式测评看板
+
+主导航「测评」打开 `evaluation/index.html`，GitHub Pages 与 JiangXing 均提供同一份页面，无需 SSH 转发。页面支持任务切换、三视角/第三人称切换和动作时间轴。
+
+2026-11-09 从服务器原看板导入 9 项正式复测，原成绩、动作与视频时间映射不变。页面明确标注旧版简单档/完全档评分；未将待运行的 SE/MP 或新部分可见协议混入旧成绩。来源记录在 `data/evaluation-provenance.json`。`public/evaluation/media/` 为保持原时长的 H.264 展示副本，原始证据仍在服务器；时长核验见 `data/evaluation-media.json`。
+
+更新看板时应同时同步内嵌 dataset 与相应媒体，保留原评分口径和运行身份；执行 `python3 scripts/build.py` 会校验全部本地录像路径。不要将 localhost/SSH 隧道地址写成公开页面的媒体地址。

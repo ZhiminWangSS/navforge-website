@@ -60,6 +60,15 @@ def build(destination):
     for ref in re.findall(r'(?:src|href)="([^"#]+)"', html):
         if not ref.startswith(('https:', 'http:')):
             assert (ROOT / 'public' / ref).is_file(), ref
+    # Evaluation is self-contained on both Pages and the server.
+    evaluation = (ROOT / 'public/evaluation/index.html').read_text()
+    dataset = json.loads(re.search(r'<script type="application/json" id="dataset">(.*?)</script>', evaluation, re.S)[1])
+    for run in dataset['runs']:
+        for task in run['tasks']:
+            for ref in task['videos'].values():
+                media = ROOT / 'public/evaluation' / ref
+                assert media.resolve().is_relative_to((ROOT / 'public/evaluation/media').resolve()), ref
+                assert media.is_file() and 0 < media.stat().st_size < 100_000_000, ref
     destination.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / 'public', destination, dirs_exist_ok=True)
     (destination / 'index.html').write_text(html.replace('<!-- PROJECT_STATUS -->', status).replace('<!-- RESEARCH_DIGEST -->', research_html))
