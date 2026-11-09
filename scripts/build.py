@@ -60,8 +60,11 @@ def build(destination):
     for ref in re.findall(r'(?:src|href)="([^"#]+)"', html):
         if not ref.startswith(('https:', 'http:')):
             assert (ROOT / 'public' / ref).is_file(), ref
+    assert 'access.js' in html and 'navforge-locked' in html
+    assert (ROOT / 'public/access.js').is_file()
     # Evaluation is self-contained on both Pages and the server.
     evaluation = (ROOT / 'public/evaluation/index.html').read_text()
+    assert '../access.js' in evaluation and 'navforge-locked' in evaluation
     dataset = json.loads(re.search(r'<script type="application/json" id="dataset">(.*?)</script>', evaluation, re.S)[1])
     for run in dataset['runs']:
         for task in run['tasks']:
