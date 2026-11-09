@@ -94,7 +94,7 @@ systemctl --user disable --now navforge-website-sync.timer  # 停止自动拉取
 
 ## 交互式测评看板
 
-主导航「测评」打开 `evaluation/index.html`，GitHub Pages 与 JiangXing 均提供同一份页面，无需 SSH 转发。页面支持任务切换、三视角/第三人称切换和动作时间轴。
+本地分支 `codex/local-evaluation-dashboard` 的主导航「测评」打开 `evaluation/index.html`。按用户要求，此看板仅在本地使用，不发布到 GitHub Pages 或服务器主站。启动本地服务后无需 SSH 转发。页面支持任务切换、三视角/第三人称切换和动作时间轴。
 
 2026-11-09 从服务器原看板导入 9 项正式复测，原成绩、动作与视频时间映射不变。页面明确标注旧版简单档/完全档评分；未将待运行的 SE/MP 或新部分可见协议混入旧成绩。来源记录在 `data/evaluation-provenance.json`。`public/evaluation/media/` 为保持原时长的 H.264 展示副本，原始证据仍在服务器；时长核验见 `data/evaluation-media.json`。
 
